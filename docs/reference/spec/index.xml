@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Specification on Cloud Native Buildpacks</title>
-    <link>https://buildpacks.io/docs/reference/spec/</link>
-    <description>Recent content in Specification on Cloud Native Buildpacks</description>
-    <generator>Hugo 0.125.1</generator>
-    <language>en-us</language>
-    <atom:link href="https://buildpacks.io/docs/reference/spec/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Buildpack API</title>
-      <link>https://buildpacks.io/docs/reference/spec/buildpack-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/spec/buildpack-api/</guid>
-      <description>&lt;p&gt;The Buildpack API specifies the interface between a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; program and one or more &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Distribution API</title>
-      <link>https://buildpacks.io/docs/reference/spec/distribution-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/spec/distribution-api/</guid>
-      <description>&lt;p&gt;This specification defines the artifact format, delivery mechanism, and order resolution process for buildpacks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Platform API</title>
-      <link>https://buildpacks.io/docs/reference/spec/platform-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/spec/platform-api/</guid>
-      <description>&lt;p&gt;The Platform specification defines the interface between the CNB &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; and a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/platform/&#34;&gt;platform&lt;/a&gt; that runs it.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Specification on Cloud Native Buildpacks</title>
+		<link>https://buildpacks.io/docs/reference/spec/</link>
+		<description>Recent content in Specification on Cloud Native Buildpacks</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="https://buildpacks.io/docs/reference/spec/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Buildpack API</title>
+				<link>https://buildpacks.io/docs/reference/spec/buildpack-api/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/spec/buildpack-api/</guid>
+				<description>&lt;p&gt;The Buildpack API specifies the interface between a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; program and one or more &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Distribution API</title>
+				<link>https://buildpacks.io/docs/reference/spec/distribution-api/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/spec/distribution-api/</guid>
+				<description>&lt;p&gt;This specification defines the artifact format, delivery mechanism, and order resolution process for buildpacks.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Platform API</title>
+				<link>https://buildpacks.io/docs/reference/spec/platform-api/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/spec/platform-api/</guid>
+				<description>&lt;p&gt;The Platform specification defines the interface between the CNB &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; and a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/platform/&#34;&gt;platform&lt;/a&gt; that runs it.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

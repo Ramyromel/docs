@@ -43,20 +43,20 @@
 <meta property="twitter:creator" content="@buildpacks_io">
 
   <script
-    src="https://cdn.jsdelivr.net/combine/npm/axios@0.21.0,npm/jquery@3.5.1,npm/bootstrap@4.5.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
+    src="https://cdn.jsdelivr.net/combine/npm/axios@1.7.9,npm/jquery@3.7.1,npm/bootstrap@5.3.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
+    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Source+Sans+Pro:400,400i,600" rel="stylesheet">
   
   <link rel="stylesheet" href="https://buildpacks.io/scss/site.css" integrity="" media="screen">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  <script src="/pagefind/pagefind-ui.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJLSR4FQXL"></script>
   <link rel="stylesheet"
@@ -73,31 +73,6 @@
     }
   </style>
 
-  <script>
-    $(function () {
-      $('h1[id], h2[id], h3[id], h4[id], h5[id]').not(':has(a)').each(function () {
-        this.innerHTML =
-          `<a href="#${this.id}" class="h-anchor">
-            ${this.innerHTML} <i class="fas fa-link icon" aria-label="Anchor"></i>
-          </a>`;
-      });
-
-      if ($('input#search').length > 0) {
-        docsearch({
-          apiKey: '5c00a51f166dab99e1cc6e0a9976e9f9',
-          indexName: 'buildpacks',
-          inputSelector: 'input#search',
-          debug: false
-        });
-      }
-    });
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-CJLSR4FQXL');
-  </script>
-
   <title>What is the lifecycle? · Cloud Native Buildpacks</title>
 </head>
 
@@ -106,7 +81,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <a href="https://buildpacks.io/" class="logo navbar-brand"><img src="/images/buildpacks-logo.svg"
         alt="Buildpacks Logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -115,33 +90,39 @@
       <ul class="navbar-nav">
         
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/features">
+              Features
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/features">
-            Features
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/community">
+              Community
+            </a>
+          </li>
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://medium.com/buildpacks">
+              Blog
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/community">
-            Community
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://registry.buildpacks.io/">
+              Registry
+            </a>
+          </li>
         
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://medium.com/buildpacks">
-            Blog
-          </a>
-        </li>
-        
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://registry.buildpacks.io/">
-            Registry
-          </a>
-        </li>
+    
         
         <li class="nav-item text-center d-lg-none">
           <a class="nav-link py-2 px-1" href="/docs">Docs</a>
@@ -151,9 +132,11 @@
         </li>
       </ul>
 
-      <a class="button-light mr-3 d-none d-lg-block" href="/docs"><i class="far fa-file-alt mr-2"></i>Docs</a>
-      <a class="github-button icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
-    </div>
+      <a class="button-light ms-3 d-none d-lg-block" href="/docs">
+        <i class="far fa-file-alt me-2"></i>Docs
+      </a>
+       <a class="github-button ms-3  icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
+    </div>    
   </nav>
 </header>
 
@@ -164,9 +147,16 @@
     <div class='row'>
       <div class='col-md-3 docs-sidebar'>
         <nav class='sidebar'>
-  <form class="pt-1 pb-3 pl-2 pr-3 border-bottom">
-    <input id="search" class="form-control" type="search" placeholder="Search..." aria-label="Search">
-  </form>
+  <div id="search"></div>
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      bundlePath: "/pagefind/"
+    });
+  });
+  </script>
   <ul>
     <li data-nav-id="/docs/" class="dd-item depth-0">
       <a href="/docs/">Getting Started</a>
@@ -184,7 +174,7 @@
   <a href="/docs/for-app-developers/tutorials/">Tutorials</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/tutorials/basic-app/" class="dd-item depth-2">
-  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first application with buildpacks</a>
+  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first app with buildpacks</a>
 </li>
   </ul>
 </li>
@@ -222,6 +212,9 @@
 </li>
 <li data-nav-id="/docs/for-app-developers/concepts/reproducibility/" class="dd-item depth-2 collapse">
   <a href="/docs/for-app-developers/concepts/reproducibility/">What is build reproducibility?</a>
+</li>
+<li data-nav-id="/docs/for-app-developers/concepts/experimental-features/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-app-developers/concepts/experimental-features/">What are experimental features?</a>
 </li>
   </ul>
 </li>
@@ -261,10 +254,10 @@
   <a href="/docs/for-app-developers/how-to/build-outputs/">Understand build outputs</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the application</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the app</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/inspect-app/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your application image</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your app image</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/download-sbom/" class="dd-item depth-3 collapse">
   <a href="/docs/for-app-developers/how-to/build-outputs/download-sbom/">Download a Software Bill-of-Materials (SBOM)</a>
@@ -345,7 +338,13 @@
 <li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/rebase/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/concepts/lifecycle/rebase/">Rebase</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/extend/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/concepts/lifecycle/extend/">Extend</a>
+</li>
   </ul>
+</li>
+<li data-nav-id="/docs/for-platform-operators/concepts/base-images/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-platform-operators/concepts/base-images/">Base image types</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/concepts/composite-buildpack/" class="dd-item depth-2 collapse">
   <a href="/docs/for-platform-operators/concepts/composite-buildpack/">What is a composite buildpack?</a>
@@ -507,6 +506,30 @@
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/">pack inspect</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/">pack manifest</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/">pack manifest add</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/">pack manifest annotate</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/">pack manifest create</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/">pack manifest inspect</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/">pack manifest push</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/">pack manifest remove</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/">pack manifest rm</a>
+</li>
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/">pack rebase</a>
 </li>
@@ -571,6 +594,9 @@
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/">Declare source metadata</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/build-env/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/how-to/build-inputs/build-env/">Specify the build time environment variables</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/stack/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/stack/">Create a stack (deprecated)</a>
@@ -877,7 +903,7 @@
 <p>We work through a full example of building a &ldquo;hello world&rdquo; NodeJs web application.</p>
 <p>In the example we run <code>pack</code> on the NodeJS application to produce an application image.  We assume that we have a NodeJS buildpack, <code>registry.fake/buildpacks/nodejs:latest</code>, that is decomposed into buildpacks that help with the build.  We expand each of the buildpacks phases to explain the process.  Throughout the example we take a production-level view of their operation.  For example, our assumed NodeJS buildpack will be described to create different build, cache and launch layers in a manner similar to how a real NodeJS buildpack would operate.</p>
 <h2 id="nodejs-buildpack">NodeJS buildpack</h2>
-<p>The example NodeJS buildpack is a meta-buildpack.  It is composed of</p>
+<p>The example NodeJS buildpack is a composite buildpack (sometimes referred to as a &ldquo;meta buildpack&rdquo;).  It is composed of</p>
 <ul>
 <li><code>node-engine</code> buildpack that provides the <code>node</code> and <code>npm</code> binaries,</li>
 <li><code>yarn</code> buildpack that provides the <code>yarn</code> binary,</li>
@@ -885,7 +911,7 @@
 <li><code>yarn-start</code> and <code>npm-start</code> buildpacks that configure the entrypoint to the application image,</li>
 <li><code>procfile</code> a buildpack that allows developers to provide a <a href="https://devcenter.heroku.com/articles/procfile#procfile-format">Heroku-style</a> entrypoint for the image.</li>
 </ul>
-<p>The <code>nodejs</code> buildpack itself is a meta-buildpack which defines two <strong>order groups</strong>.  Here we represent the order groups visually:</p>
+<p>The <code>nodejs</code> buildpack itself is a composite buildpack which defines two <strong>order groups</strong>.  Here we represent the order groups visually:</p>
 <p><img src="/images/order-groups.svg" alt="nodejs order groups"></p>
 <p>The order group containing <code>yarn</code> logic has higher precedence in the <code>nodejs</code> buildpack than the order group containing <code>npm-install</code>.  In both order groups the <code>procfile</code> buildpack is optional.  The function of order groups will become more clear as we proceed through our example.</p>
 <h2 id="running-pack">Running <code>pack</code></h2>
@@ -920,7 +946,7 @@
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Finally, we describe the container entrypoint using a script in the <code>package.json</code>.  The script must be named <code>start</code> according to NodeJS convention.   Here we see that the entrypoint should run the provided <code>node index.js</code> command.</p>
-<p>We build our application using the default builder and specify to only use the <code>nodejs</code> meta-buildpack in the build.  The restriction to use only the <code>nodejs</code> meta-buildpack simplifies the explanation as that buildpack provides only two order groups.</p>
+<p>We build our application using the default builder and specify to only use the <code>nodejs</code> composite buildpack in the build.  The restriction to use only the <code>nodejs</code> composite buildpack simplifies the explanation as that buildpack provides only two order groups.</p>
 <p><asciinema-player
 idle-time-limit="0.5s"
 font-size="medium"
@@ -1158,7 +1184,7 @@ Finished running build for buildpack example/npm-start@0.0.2
 <p>The export phase constructs a new OCI image using all the layers provided in the build phase.  In addition the application source is added as a layer to the output image and the image <code>ENTRYPOINT</code> is set.  The exported image, which we call <code>example</code>, contains only launch layers.  Cache layers are preserved on the local machine for subsequent builds.</p>
 <p>Our NodeJS example image requires an entrypoint called <code>web</code>.  The <code>web</code> entrypoint is implemented on the application image as a symlink to the <code>launcher</code> binary.  As we have specified a single entrypoint, this then becomes the default entrypoint of the image.</p>
 <h2 id="summary">Summary</h2>
-<p>We have taken a detailed look at how buildpacks are used to build a sample application.  The meta-buildpack contains two order groups and we have seen examples of how an order group is resolved.  In addition we have looked at the contributions that a buildpack makes to the build plan and considered how these are resolved into a buildpack plan to be provided to the build phase of specific buildpacks.  Finally, we have briefly considered how the analyze and restore phases can allow advanced caching strategies.</p>
+<p>We have taken a detailed look at how buildpacks are used to build a sample application.  The composite buildpack contains two order groups and we have seen examples of how an order group is resolved.  In addition we have looked at the contributions that a buildpack makes to the build plan and considered how these are resolved into a buildpack plan to be provided to the build phase of specific buildpacks.  Finally, we have briefly considered how the analyze and restore phases can allow advanced caching strategies.</p>
 
         
 
@@ -1193,7 +1219,7 @@ Finished running build for buildpack example/npm-start@0.0.2
   <footer>
   <div class="container footer">
     <a href="https://www.cncf.io/" style="width: 50%;"><img src="/images/cncf-color.svg" class="footer-logo" alt="CNCF logo" ></a>
-    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> incubating project.</p>
+    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> graduated project.</p>
   </div>
   <div class="bg-blue">
     <div class="container sub-footer">

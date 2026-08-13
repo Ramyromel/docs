@@ -1,88 +1,92 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Concepts on Cloud Native Buildpacks</title>
-    <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/</link>
-    <description>Recent content in Concepts on Cloud Native Buildpacks</description>
-    <generator>Hugo 0.125.1</generator>
-    <language>en-us</language>
-    <atom:link href="https://buildpacks.io/docs/for-buildpack-authors/concepts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What is a buildpack?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</guid>
-      <description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is the lifecycle?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</guid>
-      <description>&lt;p&gt;The lifecycle is a binary responsible for orchestrating buildpacks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a buildpack group?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</guid>
-      <description>&lt;p&gt;A buildpack group is a list of individual buildpacks that are designged to work together to build an application.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What are targets?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</guid>
-      <description>&lt;p&gt;The concept of &lt;code&gt;targets&lt;/code&gt; is used to identify compatibility between buildpacks and base images.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What caching strategies are available to buildpacks?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</guid>
-      <description>Learn strategies for caching layers at build-time for future re-use.</description>
-    </item>
-    <item>
-      <title>What is a buildpack dependency layer?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What is a buildpack package?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What is a component buildpack?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What is a composite buildpack?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</guid>
-      <description>A composite buildpack, also sometimes called a &amp;ldquo;meta-buildpack&amp;rdquo;, is a buildpack that does not contain any ./bin/detect or ./bin/build binaries, but instead references other buildpacks in its buildpack.toml via the [[order]] array.&#xA;This is useful for composing more complex detection strategies.</description>
-    </item>
-    <item>
-      <title>What is an image extension?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</guid>
-      <description>&lt;p&gt;An &lt;code&gt;image extension&lt;/code&gt; is software that generates Dockerfiles that can be used to extend base images for buildpacks builds.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is the build plan?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Concepts on Cloud Native Buildpacks</title>
+		<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/</link>
+		<description>Recent content in Concepts on Cloud Native Buildpacks</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="https://buildpacks.io/docs/for-buildpack-authors/concepts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>What is a buildpack?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is the lifecycle?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</guid>
+				<description>&lt;p&gt;The lifecycle is a binary responsible for orchestrating buildpacks.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a buildpack group?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</guid>
+				<description>&lt;p&gt;A buildpack group is a list of individual buildpacks that are designed to work together to build an application.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What are targets?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</guid>
+				<description>&lt;p&gt;The concept of &lt;code&gt;targets&lt;/code&gt; is used to identify compatibility between buildpacks and base images.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What caching strategies are available to buildpacks?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</guid>
+				<description>Learn strategies for caching layers at build-time for future re-use.</description>
+			</item>
+			<item>
+				<title>What is a buildpack dependency layer?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</guid>
+				<description>&lt;p&gt;&lt;code&gt;Dependency layers&lt;/code&gt; are semantically meaningful layers that are contributed by one or more buildpacks during the &lt;code&gt;build&lt;/code&gt; phase, one for each dependency.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a buildpack package?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;buildpack package&lt;/code&gt; refers to the process of packaging buildpacks for distribution as OCI images or OCI-compatible &lt;code&gt;tar&lt;/code&gt; files.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a component buildpack?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</guid>
+				<description>&lt;p&gt;A &lt;strong&gt;component buildpack&lt;/strong&gt; is a buildpack containing &lt;code&gt;/bin/detect&lt;/code&gt; and &lt;code&gt;/bin/build&lt;/code&gt; executables and that implements the &lt;a href=&#34;https://github.com/buildpacks/spec/blob/main/buildpack.md#buildpack-interface&#34;&gt;Buildpack Interface&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a composite buildpack?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</guid>
+				<description>&lt;p&gt;A composite buildpack, also sometimes called a &amp;ldquo;meta buildpack&amp;rdquo;,&#xA;is a buildpack that does not contain any &lt;code&gt;./bin/detect&lt;/code&gt; or &lt;code&gt;./bin/build&lt;/code&gt; binaries,&#xA;but instead references other buildpacks in its &lt;code&gt;buildpack.toml&lt;/code&gt; via the &lt;code&gt;[[order]]&lt;/code&gt; array.&lt;/p&gt;&#xA;&lt;p&gt;This is useful for composing more complex detection strategies.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is an image extension?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</guid>
+				<description>&lt;p&gt;An &lt;code&gt;image extension&lt;/code&gt; is software that generates Dockerfiles that can be used to extend base images for buildpacks builds.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is the build plan?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</guid>
+				<description>&lt;p&gt;A &lt;strong&gt;build plan&lt;/strong&gt; is a &lt;code&gt;toml&lt;/code&gt; file that is the output of the &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/#phase-2-detect&#34;&gt;detect&lt;/a&gt; phase, in which each component buildpack or image extension may express the dependencies it requires and the dependencies it provides.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

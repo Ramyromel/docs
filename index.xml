@@ -1,1166 +1,1254 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cloud Native Buildpacks</title>
-    <link>https://buildpacks.io/</link>
-    <description>Recent content on Cloud Native Buildpacks</description>
-    <generator>Hugo 0.125.1</generator>
-    <language>en-us</language>
-    <atom:link href="https://buildpacks.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Analyze</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/analyze/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/analyze/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;analyzer&lt;/code&gt; restores files that buildpacks may use to optimize the build and export phases.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Build for ARM architecture</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-arm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-arm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Build image</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/base-images/build/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/base-images/build/</guid>
-      <description>&lt;p&gt;The &lt;strong&gt;build image&lt;/strong&gt; provides the base image from which the build environment is constructed.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Buildpack API 0.4 -&gt; 0.5</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.4-0.5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.4-0.5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Create a build base image</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/build-base/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/build-base/</guid>
-      <description>&lt;p&gt;The build-time base image provides the OS-level dependencies for buildpacks at build-time.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Features</title>
-      <link>https://buildpacks.io/features/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/features/</guid>
-      <description>Cloud Native Buildpacks provide a unique solution to the image build process. See how it compares to the alternatives.</description>
-    </item>
-    <item>
-      <title>Get started</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/get-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/get-started/</guid>
-      <description>&lt;p&gt;To write a buildpack, we follow the &lt;a href=&#34;https://github.com/buildpacks/spec/blob/main/buildpack.md&#34;&gt;Buildpack Specification&lt;/a&gt;,&#xA;which defines the contract between buildpacks and the lifecycle.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Guidance for extension authors</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-extensions/guidance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-extensions/guidance/</guid>
-      <description>&lt;p&gt;If you haven&amp;rsquo;t already, check out our &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension&#34;&gt;tutorial&lt;/a&gt; on extensions,&#xA;then come here for the finer points.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Platform API 0.3 -&gt; 0.4</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.3-0.4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.3-0.4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Platform API 0.7 -&gt; 0.8</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.7-0.8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.7-0.8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>project.toml</title>
-      <link>https://buildpacks.io/docs/reference/config/project-descriptor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/config/project-descriptor/</guid>
-      <description>&lt;p&gt;The project descriptor file allows app developers to provide configuration for apps, services, functions and buildpacks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Run the application</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/specify-launch-process/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/specify-launch-process/</guid>
-      <description>Learn how to specify the launch process for an app.</description>
-    </item>
-    <item>
-      <title>Setting up your local environment</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/01_setup-local-environment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/01_setup-local-environment/</guid>
-      <description>Check system requirements Before we get started, make sure you&amp;rsquo;ve got the following installed:&#xA;Install Docker Install pack First, we&amp;rsquo;ll create a sample nodeJS app that you can use when developing your buildpack:&#xA;mkdir node-js-sample-app Create a file in the current directory called node-js-sample-app/app.js with the following contents:&#xA;const http = require(&amp;#39;http&amp;#39;); const hostname = &amp;#39;0.0.0.0&amp;#39;; const port = 8080; const server = http.createServer((req, res) =&amp;gt; { res.statusCode = 200; res.</description>
-    </item>
-    <item>
-      <title>Setting up your local environment</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/01_setup-local-environment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/01_setup-local-environment/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Specify buildpacks or extensions at build time</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-buildpacks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-buildpacks/</guid>
-      <description>No builder author can be truly omniscient, and whoever created yours surely was no exception!</description>
-    </item>
-    <item>
-      <title>What is a buildpack?</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/buildpack/</guid>
-      <description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a buildpack?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</guid>
-      <description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a buildpack?</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/</guid>
-      <description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is the lifecycle?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</guid>
-      <description>&lt;p&gt;The lifecycle is a binary responsible for orchestrating buildpacks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>An App&#39;s Brief Journey from Source to Image</title>
-      <link>https://buildpacks.io/docs/app-journey/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/app-journey/</guid>
-      <description>Pack for the journey In this tutorial, we&amp;rsquo;ll explain how to use pack and buildpacks to create a runnable app image from source code.&#xA;In order to run the build process in an isolated fashion, pack uses Docker or a Docker-compatible daemon to create the containers where buildpacks execute. That means you&amp;rsquo;ll need to make sure you have both pack and a daemon installed:&#xA;Install pack Install Docker or alternatively, see this page about working with podman.</description>
-    </item>
-    <item>
-      <title>Build for Windows containers</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-windows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-windows/</guid>
-      <description>&lt;p&gt;You can use buildpacks to build container images that run Windows containers on Windows (WCOW).&lt;/p&gt;&#xA;&lt;p&gt;This page is not relevant if your host machine is Windows but you are running Linux containers on Windows (LCOW);&#xA;in this case, no special configuration is required.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>builder.toml</title>
-      <link>https://buildpacks.io/docs/reference/config/builder-config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/config/builder-config/</guid>
-      <description>&lt;p&gt;The builder config file is used for creating &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/builder&#34;&gt;builders&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Buildpack API 0.5 -&gt; 0.6</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.5-0.6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.5-0.6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Community</title>
-      <link>https://buildpacks.io/community/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/community/</guid>
-      <description>Join other users, contributors and providers of Cloud Native Buildpacks.</description>
-    </item>
-    <item>
-      <title>Create a run base image</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/run-base/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/run-base/</guid>
-      <description>&lt;p&gt;The runtime base image provides the OS-level dependencies for applications at runtime.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Customize buildpack behavior with build-time environment variables</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/configure-build-time-environment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/configure-build-time-environment/</guid>
-      <description>&lt;p&gt;Environment variables are a common way to configure various buildpacks at build-time.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Detect</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/detect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/detect/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;detector&lt;/code&gt; finds an ordered group of buildpacks to use during the build phase.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Inspect your application image</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/inspect-app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/inspect-app/</guid>
-      <description>&lt;p&gt;Buildpacks-built images contain metadata that allow you to audit both the image itself and the build process.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>kpack</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/kpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/kpack/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pivotal/kpack&#34;&gt;kpack&lt;/a&gt; is a Kubernetes-native platform that uses unprivileged Kubernetes primitives to perform buildpacks builds and keep application images up-to-date.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pivotal/kpack&#34;&gt;kpack&lt;/a&gt; is part of the &lt;a href=&#34;https://github.com/buildpacks-community&#34;&gt;Buildpacks Community&lt;/a&gt; organization.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Platform API 0.4 -&gt; 0.5</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.4-0.5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.4-0.5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Platform API 0.8 -&gt; 0.9</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.8-0.9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.8-0.9/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Run image</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/</guid>
-      <description>&lt;p&gt;The &lt;strong&gt;run image&lt;/strong&gt; provides the base image for application images.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The building blocks of a Cloud Native Buildpack</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/02_building-blocks-cnb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/02_building-blocks-cnb/</guid>
-      <description>Now we will set up the buildpack scaffolding.&#xA;Let&amp;rsquo;s create the directory where your buildpack will live:&#xA;Using the Pack CLI The buildpack new &amp;lt;id&amp;gt; command will create a directory named for the buildpack ID.&#xA;Example:&#xA;pack buildpack new examples/node-js \ --api 0.10 \ --path node-js-buildpack \ --version 0.0.1 \ --stacks io.buildpacks.samples.stacks.jammy This command will create node-js-buildpack directory which contains buildpack.toml, bin/build, bin/detect files.&#xA;Additional Parameters -a, --api Buildpack API compatibility of the generated buildpack -h, --help Help for &amp;rsquo;new&#39; --path the location on the filesystem to generate the artifacts --stacks Stacks (deprecated) the buildpack will work with -V, --version the version of the buildpack in buildpack.</description>
-    </item>
-    <item>
-      <title>Use the build plan</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-build-plan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-build-plan/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/buildpacks/spec/blob/main/buildpack.md#build-plan-toml&#34;&gt;Build Plan&lt;/a&gt; is a document that buildpacks can use to pass information between the &lt;code&gt;detect&lt;/code&gt; and &lt;code&gt;build&lt;/code&gt; phases, and between each other.&#xA;The build plan is passed (by the lifecycle) as a parameter to the &lt;code&gt;detect&lt;/code&gt; and &lt;code&gt;build&lt;/code&gt; binaries of each buildpack.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a builder?</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/builder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/builder/</guid>
-      <description>&lt;p&gt;A &lt;code&gt;builder&lt;/code&gt; is an &lt;a href=&#34;https://github.com/opencontainers/image-spec&#34;&gt;OCI image&lt;/a&gt; containing&#xA;an ordered combination of &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; and&#xA;a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/base-images/build/&#34;&gt;build-time base image&lt;/a&gt;, a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; binary, and a reference to a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/&#34;&gt;runtime base image&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a builder?</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/builder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/builder/</guid>
-      <description>&lt;p&gt;A &lt;code&gt;builder&lt;/code&gt; is an OCI image containing&#xA;an ordered combination of &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; and&#xA;a build-time base image, a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; binary, and a reference to a runtime base image.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a buildpack group?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</guid>
-      <description>&lt;p&gt;A buildpack group is a list of individual buildpacks that are designged to work together to build an application.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why this feature?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/02_why-dockerfiles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/02_why-dockerfiles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Buildpack API 0.6 -&gt; 0.7</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.6-0.7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.6-0.7/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>buildpack.toml</title>
-      <link>https://buildpacks.io/docs/reference/config/buildpack-config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/config/buildpack-config/</guid>
-      <description>&lt;p&gt;The buildpack configuration file is a necessary component of a &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack&#34;&gt;buildpack&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CircleCI</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/circleci/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/circleci/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt; is a continuous integration and delivery platform.&lt;/p&gt;&#xA;&lt;p&gt;The CNB project maintains an integration, called an &lt;a href=&#34;https://circleci.com/orbs/&#34;&gt;orb&lt;/a&gt;,&#xA;which allows users to run &lt;a href=&#34;https://buildpacks.io/docs/install-pack&#34;&gt;pack&lt;/a&gt; commands inside their pipelines.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Create dependency layers</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-layer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-layer/</guid>
-      <description>&lt;p&gt;Each directory created by the buildpack under the &lt;code&gt;CNB_LAYERS_DIR&lt;/code&gt; can be used as a layer in the final app image or build cache.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Declare source metadata</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/</guid>
-      <description>Declare information about application source code, to be included as metadata in the application image.</description>
-    </item>
-    <item>
-      <title>Detecting your application</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/03_detection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/03_detection/</guid>
-      <description>Next, you will want to actually detect that the app you are building is a node-js app. In order to do this, you will need to check for a package.json.&#xA;Replace exit 1 in the detect script with the following check:&#xA;if [[ ! -f package.json ]]; then exit 100 fi Your node-js-buildpack/bin/detect script should look like this:&#xA;#!/usr/bin/env bash set -eo pipefail if [[ ! -f package.json ]]; then exit 100 fi Next, rebuild your app with the updated buildpack:</description>
-    </item>
-    <item>
-      <title>Download a Software Bill-of-Materials (SBOM)</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/download-sbom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/download-sbom/</guid>
-      <description>An SBOM can give you a layer-by-layer view of what&amp;rsquo;s inside your application image.</description>
-    </item>
-    <item>
-      <title>Export to OCI layout format on disk</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/export-to-oci-layout/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/export-to-oci-layout/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mount volumes at build-time</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-volume-mounts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-volume-mounts/</guid>
-      <description>Supply and persist data from build containers with arbitrary volume mounts.</description>
-    </item>
-    <item>
-      <title>Platform API 0.5 -&gt; 0.6</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.5-0.6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.5-0.6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Platform API 0.9 -&gt; 0.10</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.9-0.10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.9-0.10/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Putting it all together</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/builder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/builder/</guid>
-      <description>&lt;p&gt;After you have created a build-time base image and a runtime base image, you are ready to create your builder!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Restore</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/restore/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/restore/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;restorer&lt;/code&gt; copies layers from the cache into the build container.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The building blocks of a CNB image extension</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/03_building-blocks-extension/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/03_building-blocks-extension/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What are targets?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</guid>
-      <description>&lt;p&gt;The concept of &lt;code&gt;targets&lt;/code&gt; is used to identify compatibility between buildpacks and base images.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What happens during build?</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/build/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/build/</guid>
-      <description>&lt;p&gt;&lt;code&gt;Build&lt;/code&gt; is the process of executing one or more &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; against an application&amp;rsquo;s source code to produce a runnable OCI image.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Build</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/build/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/build/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;builder&lt;/code&gt; transforms application source code into runnable artifacts that can be packaged into a container.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Building your application</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/04_build-app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/04_build-app/</guid>
-      <description>Now we&amp;rsquo;ll change the build step you created to install application dependencies. This will require updates to the build script such that it performs the following steps:&#xA;Create a layer for the NodeJS runtime Download the NodeJS runtime and installs it to the layer By doing this, you&amp;rsquo;ll learn how to create arbitrary layers with your buildpack, and how to read the contents of the app in order to perform actions like downloading dependencies.</description>
-    </item>
-    <item>
-      <title>Buildpack API 0.7 -&gt; 0.8</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.7-0.8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.7-0.8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Extending the build-time base image with a build.Dockerfile</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/04_build-dockerfile/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/04_build-dockerfile/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gitlab Auto DevOps</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/gitlab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/gitlab/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://about.gitlab.com/&#34;&gt;Gitlab&lt;/a&gt; is a web-based DevOps platform. The &lt;a href=&#34;https://docs.gitlab.com/ee/topics/autodevops/&#34;&gt;Auto DevOps&lt;/a&gt; feature uses &lt;a href=&#34;https://buildpacks.io/docs/install-pack&#34;&gt;&lt;code&gt;pack&lt;/code&gt;&lt;/a&gt;&#xA;to build applications prior to deploying them.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Package a buildpack or extension</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/package-buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/package-buildpack/</guid>
-      <description>Learn how to package your buildpack or extension for distribution.</description>
-    </item>
-    <item>
-      <title>package.toml</title>
-      <link>https://buildpacks.io/docs/reference/config/package-config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/config/package-config/</guid>
-      <description>&lt;p&gt;The package config file is used for packaging buildpacks for distribution as OCI images or tar files.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Platform API 0.10 -&gt; 0.11</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.10-0.11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.10-0.11/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Platform API 0.6 -&gt; 0.7</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.6-0.7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.6-0.7/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Specify process types</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-launch-processes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-launch-processes/</guid>
-      <description>&lt;p&gt;One of the benefits of buildpacks is that they are multi-process - an image can have multiple entrypoints for each operational mode.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Use an HTTP proxy</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/use-http-proxy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/use-http-proxy/</guid>
-      <description>Useful for university or corporate environments.</description>
-    </item>
-    <item>
-      <title>Use project.toml</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-project-toml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-project-toml/</guid>
-      <description>Simplify your &lt;code&gt;pack&lt;/code&gt; configuration.</description>
-    </item>
-    <item>
-      <title>What caching strategies are available to buildpacks?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</guid>
-      <description>Learn strategies for caching layers at build-time for future re-use.</description>
-    </item>
-    <item>
-      <title>What happens during rebase?</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/rebase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/rebase/</guid>
-      <description>&lt;p&gt;&lt;code&gt;Rebase&lt;/code&gt; allows app developers or operators to rapidly update an app image when its &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/&#34;&gt;runtime base image&lt;/a&gt; has changed.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a platform?</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/platform/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/platform/</guid>
-      <description>&lt;p&gt;A &lt;code&gt;platform&lt;/code&gt; orchestrates &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;builds&lt;/a&gt; by invoking the &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; binary together with &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; and&#xA;application source code to produce a runnable OCI image.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Build on Podman</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-on-podman/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-on-podman/</guid>
-      <description>Use Podman as an alternative to Docker to create the containerized build environment.</description>
-    </item>
-    <item>
-      <title>Buildpack API 0.8 -&gt; 0.9</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.8-0.9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.8-0.9/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Export</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/export/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/export/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;exporter&lt;/code&gt; creates the final OCI image.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Making your application runnable</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/05_make-app-runnable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/05_make-app-runnable/</guid>
-      <description>To make your app runnable, a default start command must be set. You&amp;rsquo;ll need to add the following to the end of your build script:&#xA;# ... # Set default start command cat &amp;gt; &amp;#34;${CNB_LAYERS_DIR}/launch.toml&amp;#34; &amp;lt;&amp;lt; EOL [[processes]] type = &amp;#34;web&amp;#34; command = [&amp;#34;node&amp;#34;, &amp;#34;app.js&amp;#34;] default = true EOL # ... Your full node-js-buildpack/bin/build script should now look like the following:&#xA;#!/usr/bin/env bash set -eo pipefail echo &amp;#34;---&amp;gt; NodeJS Buildpack&amp;#34; # 1.</description>
-    </item>
-    <item>
-      <title>Platform API 0.11 -&gt; 0.12</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.11-0.12/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.11-0.12/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Project &#34;Piper&#34;</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/piper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/piper/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.project-piper.io/&#34;&gt;Project &amp;ldquo;Piper&amp;rdquo;&lt;/a&gt; is a set of ready-made continuous delivery pipelines for direct use in your project.&#xA;It now also implements the CNB Platform spec as a step and makes it available in your Jenkins pipeline.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.project-piper.io/&#34;&gt;Project &amp;ldquo;Piper&amp;rdquo;&lt;/a&gt; is maintained by &lt;a href=&#34;https://www.sap.com/&#34;&gt;SAP&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Provide a Software Bill-of-Materials</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-sbom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-sbom/</guid>
-      <description>&lt;p&gt;Buildpacks can provide a &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_bill_of_materials&#34;&gt;Software &lt;code&gt;Bill-of-Materials&lt;/code&gt;&lt;/a&gt; (SBOM)&#xA;to describe the dependencies that they provide.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Publishing with Github Actions</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/publish-buildpack/with-github-actions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/publish-buildpack/with-github-actions/</guid>
-      <description>Learn how to automatically publish your buildpack to the Buildpack Registry from a Github Action.</description>
-    </item>
-    <item>
-      <title>Switching the runtime base image with a run.Dockerfile</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/05_run-dockerfile-switch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/05_run-dockerfile-switch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Use an inline buildpack</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-inline-buildpacks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-inline-buildpacks/</guid>
-      <description>Customize your build with a bit of shell script.</description>
-    </item>
-    <item>
-      <title>Buildpack API 0.9 -&gt; 0.10</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.9-0.10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.9-0.10/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Create</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/create/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/create/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;creator&lt;/code&gt; runs analyze, detect, restore, build, and export in a single command.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Extending the runtime base image with a run.Dockerfile</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/06_run-dockerfile-extend/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/06_run-dockerfile-extend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Improving performance with caching</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/06_caching/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/06_caching/</guid>
-      <description>We can improve performance by caching the runtime between builds, only re-downloading when necessary. To begin, let&amp;rsquo;s cache the runtime layer.&#xA;Cache the runtime layer To do this, replace the following lines in the build script:&#xA;# 4. MAKE node-js AVAILABLE DURING LAUNCH echo -e &amp;#39;[types]\nlaunch = true&amp;#39; &amp;gt; &amp;#34;${CNB_LAYERS_DIR}/node-js.toml&amp;#34; with the following:&#xA;# 4. MAKE node-js AVAILABLE DURING LAUNCH and CACHE it echo -e &amp;#39;[types]\ncache = true\nlaunch = true&amp;#39; &amp;gt; &amp;#34;${CNB_LAYERS_DIR}/node-js.</description>
-    </item>
-    <item>
-      <title>Tekton</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/tekton/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/tekton/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://tekton.dev/&#34;&gt;Tekton&lt;/a&gt; is an open-source CI/CD system running on k8s.&lt;/p&gt;&#xA;&lt;p&gt;The CNB project has created two reference &amp;ldquo;tasks&amp;rdquo; for performing buildpacks builds,&#xA;both of which use the &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle&#34;&gt;lifecycle&lt;/a&gt; directly (i.e. they do not use &lt;code&gt;pack&lt;/code&gt;).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Use a cache image</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-cache-image/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-cache-image/</guid>
-      <description>Share layers between builds with a cache image.</description>
-    </item>
-    <item>
-      <title>What is build reproducibility?</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/reproducibility/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/reproducibility/</guid>
-      <description>&lt;p&gt;Given the same inputs, two builds should produce the same outputs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Launch</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/launch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/launch/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;launcher&lt;/code&gt; is the entrypoint for the final OCI image, responsible for launching application processes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Making your buildpack configurable</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/07_make-buildpack-configurable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/07_make-buildpack-configurable/</guid>
-      <description>It&amp;rsquo;s likely that not all NodeJS apps will want to use the same version of NodeJS. Let&amp;rsquo;s make the NodeJS version configurable.&#xA;Select NodeJS version We&amp;rsquo;ll allow buildpack users to define the desired NodeJS version via a .node-js-version file in their app. We&amp;rsquo;ll first update the detect script to check for this file. We will then record the dependency we can provide (NodeJS), as well as the specific dependency the application will require, in the Build Plan, a document the lifecycle uses to determine if the buildpack will provide everything the application needs.</description>
-    </item>
-    <item>
-      <title>Rebase</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/rebase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/rebase/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;rebaser&lt;/code&gt; places application layers atop a new version of the runtime base image.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Specify export target</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-export-target/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-export-target/</guid>
-      <description>&lt;p&gt;Tell &lt;code&gt;pack&lt;/code&gt; where you want your application image to be saved.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Add labels to the application image</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-labels/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-labels/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Clear the buildpack environment</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/clear-env/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/clear-env/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Craft a buildpack order</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/craft-order/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/craft-order/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Create a stack (deprecated)</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/stack/</guid>
-      <description>&lt;p&gt;A stack is the grouping together of the build and run base images, represented by a unique ID.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Create slice layers</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-slice-layers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-slice-layers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Re-use dependency layers</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/re-use-layers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/re-use-layers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Specify the default launch process</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-default-launch-process/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-default-launch-process/</guid>
-      <description>Buildpacks can define multiple processes for an application image. Specify which process should be the default.</description>
-    </item>
-    <item>
-      <title>Specify the environment</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-env/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-env/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Stack</title>
-      <link>https://buildpacks.io/docs/for-app-developers/concepts/base-images/stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/concepts/base-images/stack/</guid>
-      <description>&lt;p&gt;A stack (deprecated) is the grouping together of the build and run base images, represented by a unique ID.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Understand build failures</title>
-      <link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/understand-failures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/understand-failures/</guid>
-      <description>How to troubleshoot when things go wrong.</description>
-    </item>
-    <item>
-      <title>Use exec.d binaries to configure the application at runtime</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-exec.d/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-exec.d/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What is a buildpack dependency layer?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What is a buildpack package?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What is a component buildpack?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>What is a composite buildpack?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</guid>
-      <description>A composite buildpack, also sometimes called a &amp;ldquo;meta-buildpack&amp;rdquo;, is a buildpack that does not contain any ./bin/detect or ./bin/build binaries, but instead references other buildpacks in its buildpack.toml via the [[order]] array.&#xA;This is useful for composing more complex detection strategies.</description>
-    </item>
-    <item>
-      <title>What is a composite buildpack?</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/composite-buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/composite-buildpack/</guid>
-      <description>A composite buildpack, also sometimes called a &amp;ldquo;meta-buildpack&amp;rdquo;, is a buildpack that does not contain any ./bin/detect or ./bin/build binaries, but instead references other buildpacks in its buildpack.toml via the [[order]] array.&#xA;This is useful for composing more complex detection strategies.</description>
-    </item>
-    <item>
-      <title>What is an image extension?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</guid>
-      <description>&lt;p&gt;An &lt;code&gt;image extension&lt;/code&gt; is software that generates Dockerfiles that can be used to extend base images for buildpacks builds.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is an image extension?</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/concepts/extension/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/concepts/extension/</guid>
-      <description>&lt;p&gt;An &lt;code&gt;image extension&lt;/code&gt; is software that generates Dockerfiles that can be used to extend base images for buildpacks builds.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is the build plan?</title>
-      <link>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Specify an image extension in a builder</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/extensions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/extensions/</guid>
-      <description>&lt;p&gt;If you are using extensions, here is how to include them in a builder.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Buildpack API</title>
-      <link>https://buildpacks.io/docs/reference/spec/buildpack-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/spec/buildpack-api/</guid>
-      <description>&lt;p&gt;The Buildpack API specifies the interface between a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; program and one or more &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Distribution API</title>
-      <link>https://buildpacks.io/docs/reference/spec/distribution-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/spec/distribution-api/</guid>
-      <description>&lt;p&gt;This specification defines the artifact format, delivery mechanism, and order resolution process for buildpacks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>pack</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack build</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_build/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_build/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack builder</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack builder create</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_create/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_create/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack builder inspect</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_inspect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_inspect/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack builder suggest</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_suggest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_suggest/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack buildpack</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack buildpack inspect</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_inspect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_inspect/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack buildpack new</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_new/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_new/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack buildpack package</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_package/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_package/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack buildpack pull</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_pull/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_pull/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack buildpack register</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_register/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_register/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack buildpack yank</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_yank/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_yank/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack completion</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_completion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_completion/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config default-builder</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_default-builder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_default-builder/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config experimental</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_experimental/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_experimental/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config lifecycle-image</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_lifecycle-image/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_lifecycle-image/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config pull-policy</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_pull-policy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_pull-policy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registries</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registries add</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_add/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_add/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registries default</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_default/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_default/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registries list</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registries remove</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_remove/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_remove/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registry-mirrors</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registry-mirrors add</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_add/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_add/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registry-mirrors list</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config registry-mirrors remove</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_remove/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_remove/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config run-image-mirrors</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config run-image-mirrors add</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_add/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_add/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config run-image-mirrors list</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config run-image-mirrors remove</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_remove/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_remove/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config trusted-builders</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config trusted-builders add</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_add/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_add/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config trusted-builders list</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack config trusted-builders remove</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_remove/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_remove/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack extension</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack extension inspect</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_inspect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_inspect/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack extension new</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_new/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_new/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack extension package</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_package/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_package/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack extension pull</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_pull/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_pull/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack extension register</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_register/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_register/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack extension yank</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_yank/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_yank/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack inspect</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack rebase</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack report</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_report/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_report/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack sbom</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack sbom download</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom_download/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom_download/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack stack</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack stack suggest</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack_suggest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack_suggest/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pack version</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_version/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Platform API</title>
-      <link>https://buildpacks.io/docs/reference/spec/platform-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/reference/spec/platform-api/</guid>
-      <description>&lt;p&gt;The Platform specification defines the interface between the CNB &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; and a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/platform/&#34;&gt;platform&lt;/a&gt; that runs it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Trusted Builders</title>
-      <link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/concepts/trusted_builders/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/concepts/trusted_builders/</guid>
-      <description>&lt;p&gt;From version &lt;a href=&#34;https://github.com/buildpacks/pack/releases/tag/v0.11.0&#34;&gt;0.11.0&lt;/a&gt; onward, &lt;code&gt;pack&lt;/code&gt; can be used to identify builders that should be considered trusted. &lt;code&gt;pack build&lt;/code&gt; will operate slightly differently under the hood based on whether it considers the specified builder to be trusted.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Cloud Native Buildpacks</title>
+		<link>https://buildpacks.io/</link>
+		<description>Recent content on Cloud Native Buildpacks</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="https://buildpacks.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Analyze</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/analyze/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/analyze/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;analyzer&lt;/code&gt; restores files that buildpacks may use to optimize the &lt;code&gt;build&lt;/code&gt; and &lt;code&gt;export&lt;/code&gt; phases.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Build for ARM architecture</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-arm/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-arm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Build image</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/base-images/build/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/base-images/build/</guid>
+				<description>&lt;p&gt;The &lt;strong&gt;build image&lt;/strong&gt; provides the base image from which the build environment is constructed.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Buildpack API 0.4 -&gt; 0.5</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.4-0.5/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.4-0.5/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Create a build base image</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/build-base/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/build-base/</guid>
+				<description>&lt;p&gt;The build-time base image provides the OS-level dependencies for buildpacks at build-time.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Features</title>
+				<link>https://buildpacks.io/features/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/features/</guid>
+				<description>Cloud Native Buildpacks provide a unique solution to the image build process. See how it compares to the alternatives.</description>
+			</item>
+			<item>
+				<title>Get started</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/get-started/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/get-started/</guid>
+				<description>&lt;p&gt;To write a buildpack, we follow the &lt;a href=&#34;https://github.com/buildpacks/spec/blob/main/buildpack.md&#34;&gt;Buildpack Specification&lt;/a&gt;,&#xA;which defines the contract between buildpacks and the lifecycle.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Guidance for extension authors</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-extensions/guidance/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-extensions/guidance/</guid>
+				<description>&lt;p&gt;If you haven&amp;rsquo;t already, check out our &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension&#34;&gt;tutorial&lt;/a&gt; on extensions,&#xA;then come here for the finer points.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Platform API 0.3 -&gt; 0.4</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.3-0.4/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.3-0.4/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Platform API 0.7 -&gt; 0.8</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.7-0.8/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.7-0.8/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>project.toml</title>
+				<link>https://buildpacks.io/docs/reference/config/project-descriptor/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/config/project-descriptor/</guid>
+				<description>&lt;p&gt;The project descriptor file allows app developers to provide configuration for apps, services, functions and buildpacks.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Run the app</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/specify-launch-process/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/specify-launch-process/</guid>
+				<description>Learn how to specify the launch process for an app.</description>
+			</item>
+			<item>
+				<title>Setting up your local environment</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/01_setup-local-environment/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/01_setup-local-environment/</guid>
+				<description>&lt;h3 id=&#34;check-system-requirements&#34;&gt;Check system requirements&lt;/h3&gt;&#xA;&lt;p&gt;Before we get started, make sure you&amp;rsquo;ve got the following installed:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#39;https://store.docker.com/search?type=edition&amp;amp;offering=community&#39; class=&#39;download-button button icon-button bg-blue&#39;&gt; Install Docker &lt;/a&gt;&lt;br /&gt;&#xA;&lt;a href=&#39;https://buildpacks.io/docs/install-pack&#39; class=&#39;download-button button icon-button bg-pink&#39;&gt; Install pack &lt;/a&gt;&lt;br /&gt;&lt;/p&gt;&#xA;&lt;!-- test:suite=create-buildpack;weight=1 --&gt;&#xA;&lt;!-- test:setup:exec;exit-code=-1 --&gt;&#xA;&lt;!--&#xA;```bash&#xA;docker rmi test-node-js-app&#xA;pack config trusted-builders add cnbs/sample-builder:resolute&#xA;```&#xA;--&gt;&#xA;&lt;!-- test:teardown:exec --&gt;&#xA;&lt;!--&#xA;```bash&#xA;docker rmi test-node-js-app&#xA;```&#xA;--&gt;&#xA;&lt;p&gt;First, we&amp;rsquo;ll create a sample nodeJS app that you can use when developing your buildpack:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Setting up your local environment</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/01_setup-local-environment/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/01_setup-local-environment/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Specify buildpacks or extensions at build time</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-buildpacks/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-buildpacks/</guid>
+				<description>No builder author can be truly omniscient, and whoever created yours surely was no exception.</description>
+			</item>
+			<item>
+				<title>What is a buildpack?</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/buildpack/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a buildpack?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a buildpack?</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;buildpack&lt;/code&gt; is software that transforms application source code into runnable artifacts&#xA;by analyzing the code and determining the best way to build it.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is the lifecycle?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/</guid>
+				<description>&lt;p&gt;The lifecycle is a binary responsible for orchestrating buildpacks.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>An App&#39;s Brief Journey from Source to Image</title>
+				<link>https://buildpacks.io/docs/app-journey/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/app-journey/</guid>
+				<description>&lt;h2 id=&#34;pack-for-the-journey&#34;&gt;Pack for the journey&lt;/h2&gt;&#xA;&lt;p&gt;In this tutorial, we&amp;rsquo;ll explain how to use &lt;code&gt;pack&lt;/code&gt; and &lt;strong&gt;buildpacks&lt;/strong&gt; to create a runnable app image from source code.&lt;/p&gt;&#xA;&lt;p&gt;In order to run the build process in an isolated fashion, &lt;code&gt;pack&lt;/code&gt; uses &lt;strong&gt;Docker&lt;/strong&gt; or a Docker-compatible daemon to create the containers where buildpacks execute.&#xA;That means you&amp;rsquo;ll need to make sure you have both &lt;code&gt;pack&lt;/code&gt; and a daemon installed:&lt;/p&gt;&#xA;&lt;a href=&#39;https://buildpacks.io/docs/install-pack&#39; class=&#39;download-button button icon-button bg-pink&#39;&gt; Install pack &lt;/a&gt;&lt;br /&gt;&#xA;&lt;p&gt;&lt;a href=&#39;https://store.docker.com/search?type=edition&amp;amp;offering=community&#39; class=&#39;download-button button icon-button bg-blue&#39;&gt; Install Docker &lt;/a&gt;&lt;br /&gt; or alternatively, see &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-on-podman&#34;&gt;this page&lt;/a&gt; about working with &lt;code&gt;podman&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Build for Windows containers</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-windows/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-for-windows/</guid>
+				<description>&lt;p&gt;The Cloud Native Buildpacks tools have dropped support for Windows containers on Windows (WCOW).&lt;/p&gt;&#xA;&lt;p&gt;You can continue to build Linux containers on Windows using &lt;code&gt;pack&lt;/code&gt; and other Cloud Native Buildpacks tools.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>builder.toml</title>
+				<link>https://buildpacks.io/docs/reference/config/builder-config/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/config/builder-config/</guid>
+				<description>&lt;p&gt;The builder config file is used for creating &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/builder&#34;&gt;builders&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Buildpack API 0.5 -&gt; 0.6</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.5-0.6/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.5-0.6/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Community</title>
+				<link>https://buildpacks.io/community/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/community/</guid>
+				<description>Join other users, contributors and providers of Cloud Native Buildpacks.</description>
+			</item>
+			<item>
+				<title>Create a run base image</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/run-base/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/run-base/</guid>
+				<description>&lt;p&gt;The runtime base image provides the OS-level dependencies for applications at runtime.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Customize buildpack behavior with build-time environment variables</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/configure-build-time-environment/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/configure-build-time-environment/</guid>
+				<description>&lt;p&gt;Environment variables are a common way to configure various buildpacks at build-time.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Detect</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/detect/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/detect/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;detector&lt;/code&gt; finds an ordered group of buildpacks to use during the &lt;code&gt;build&lt;/code&gt; phase.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Inspect your app image</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/inspect-app/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/inspect-app/</guid>
+				<description>&lt;p&gt;Buildpacks-built images contain metadata that allow you to audit both the image itself and the build process.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>kpack</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/kpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/kpack/</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;https://github.com/buildpacks-community/kpack&#34;&gt;kpack&lt;/a&gt; is a Kubernetes-native platform that uses unprivileged Kubernetes primitives to perform buildpacks builds and keep application images up-to-date.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/buildpacks-community/kpack&#34;&gt;kpack&lt;/a&gt; is part of the &lt;a href=&#34;https://github.com/buildpacks-community&#34;&gt;Buildpacks Community&lt;/a&gt; organization.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Platform API 0.4 -&gt; 0.5</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.4-0.5/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.4-0.5/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Platform API 0.8 -&gt; 0.9</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.8-0.9/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.8-0.9/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Run image</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/</guid>
+				<description>&lt;p&gt;The &lt;strong&gt;run image&lt;/strong&gt; provides the base image for app images.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The building blocks of a Cloud Native Buildpack</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/02_building-blocks-cnb/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/02_building-blocks-cnb/</guid>
+				<description>&lt;!-- test:suite=create-buildpack;weight=2 --&gt;&#xA;&lt;p&gt;Now we will set up the buildpack scaffolding.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s create the directory where your buildpack will live:&lt;/p&gt;&#xA;&lt;h2 id=&#34;using-the-pack-cli&#34;&gt;Using the Pack CLI&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;buildpack new &amp;lt;id&amp;gt;&lt;/code&gt; command will create a directory named for the buildpack ID.&#xA;Make sure to run this command outside the &lt;code&gt;node-js-sample-app&lt;/code&gt; directory created previously.&lt;/p&gt;&#xA;&lt;p&gt;Example:&lt;/p&gt;&#xA;&lt;!-- test:exec --&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pack buildpack new examples/node-js &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    --api 0.10 &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    --path node-js-buildpack &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    --version 0.0.1 &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    --targets &lt;span class=&#34;s2&#34;&gt;&amp;#34;linux/amd64&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!--+- &#34;{{execute}}&#34;+--&gt;&#xA;&lt;p&gt;This command will create &lt;code&gt;node-js-buildpack&lt;/code&gt; directory which contains &lt;code&gt;buildpack.toml&lt;/code&gt;, &lt;code&gt;bin/build&lt;/code&gt;,  &lt;code&gt;bin/detect&lt;/code&gt; files.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Use the build plan</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-build-plan/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-build-plan/</guid>
+				<description>&lt;p&gt;The &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/&#34;&gt;Build Plan&lt;/a&gt; is a document that buildpacks can use to pass information between the &lt;code&gt;detect&lt;/code&gt; and &lt;code&gt;build&lt;/code&gt; phases, and between each other.&#xA;The build plan is passed (by the lifecycle) as a parameter to the &lt;code&gt;detect&lt;/code&gt; and &lt;code&gt;build&lt;/code&gt; binaries of each buildpack.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a builder?</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/builder/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/builder/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;builder&lt;/code&gt; is an &lt;a href=&#34;https://github.com/opencontainers/image-spec&#34;&gt;OCI image&lt;/a&gt; containing&#xA;an ordered combination of &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; and&#xA;a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/base-images/build/&#34;&gt;build-time base image&lt;/a&gt;, a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; binary, and a reference to a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/&#34;&gt;runtime base image&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a builder?</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/builder/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/builder/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;builder&lt;/code&gt; is an OCI image containing&#xA;an ordered combination of &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; and&#xA;a build-time base image, a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; binary, and a reference to a runtime base image.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a buildpack group?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack-group/</guid>
+				<description>&lt;p&gt;A buildpack group is a list of individual buildpacks that are designed to work together to build an application.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why this feature?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/02_why-dockerfiles/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/02_why-dockerfiles/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Buildpack API 0.6 -&gt; 0.7</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.6-0.7/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/deprecated/buildpack-api-0.6-0.7/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>buildpack.toml</title>
+				<link>https://buildpacks.io/docs/reference/config/buildpack-config/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/config/buildpack-config/</guid>
+				<description>&lt;p&gt;The buildpack configuration file is a necessary component of a &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/concepts/buildpack&#34;&gt;buildpack&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>CircleCI</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/circleci/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/circleci/</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;https://circleci.com/&#34;&gt;CircleCI&lt;/a&gt; is a continuous integration and delivery platform.&lt;/p&gt;&#xA;&lt;p&gt;The CNB project maintains an integration, called an &lt;a href=&#34;https://circleci.com/orbs/&#34;&gt;orb&lt;/a&gt;,&#xA;which allows users to run &lt;a href=&#34;https://buildpacks.io/docs/install-pack&#34;&gt;pack&lt;/a&gt; commands inside their pipelines.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Create dependency layers</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-layer/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-layer/</guid>
+				<description>&lt;p&gt;Each directory created by the buildpack under the &lt;code&gt;CNB_LAYERS_DIR&lt;/code&gt; can be used as a layer in the final app image or build cache.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Declare source metadata</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/</guid>
+				<description>Declare information about application source code, to be included as metadata in the application image.</description>
+			</item>
+			<item>
+				<title>Detecting your application</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/03_detection/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/03_detection/</guid>
+				<description>&lt;!-- test:suite=create-buildpack;weight=3 --&gt;&#xA;&lt;p&gt;Next, you will want to actually detect that the app you are building is a node-js app. In order to do this, you will need to check for a &lt;code&gt;package.json&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Replace &lt;code&gt;exit 1&lt;/code&gt; in the &lt;code&gt;detect&lt;/code&gt; script with the following check:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; ! -f package.json &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your &lt;code&gt;node-js-buildpack/bin/detect&lt;/code&gt;&lt;!--+&#34;{{open}}&#34;+--&gt; script should look like this:&lt;/p&gt;&#xA;&lt;!-- test:file=node-js-buildpack/bin/detect --&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/usr/bin/env bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; -eo pipefail&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; ! -f package.json &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next, rebuild your app with the updated buildpack:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Download a Software Bill-of-Materials (SBOM)</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/download-sbom/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/download-sbom/</guid>
+				<description>An SBOM can give you a layer-by-layer view of what&amp;rsquo;s inside your app image.</description>
+			</item>
+			<item>
+				<title>Export to OCI layout format on disk</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/export-to-oci-layout/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/export-to-oci-layout/</guid>
+				<description>The OCI Image Layout is the directory structure for OCI content-addressable blobs and location-addressable references.</description>
+			</item>
+			<item>
+				<title>Mount volumes at build-time</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-volume-mounts/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-volume-mounts/</guid>
+				<description>Supply and persist data from build containers with arbitrary volume mounts.</description>
+			</item>
+			<item>
+				<title>Platform API 0.5 -&gt; 0.6</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.5-0.6/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.5-0.6/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Platform API 0.9 -&gt; 0.10</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.9-0.10/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.9-0.10/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Putting it all together</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/builder/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/builder/</guid>
+				<description>&lt;p&gt;After you have created a build-time base image and a runtime base image, you are ready to create your builder!&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Restore</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/restore/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/restore/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;restorer&lt;/code&gt; copies layers from the &lt;code&gt;cache&lt;/code&gt; into the &lt;code&gt;build&lt;/code&gt; container.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The building blocks of a CNB image extension</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/03_building-blocks-extension/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/03_building-blocks-extension/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>What are targets?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/targets/</guid>
+				<description>&lt;p&gt;The concept of &lt;code&gt;targets&lt;/code&gt; is used to identify compatibility between buildpacks and base images.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What happens during build?</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/build/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/build/</guid>
+				<description>&lt;p&gt;&lt;code&gt;Build&lt;/code&gt; is the process of executing one or more &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; against an app&amp;rsquo;s source code to produce a runnable OCI image.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Build</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/build/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/build/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;builder&lt;/code&gt; transforms application source code into runnable artifacts that can be packaged into a container.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Building your application</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/04_build-app/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/04_build-app/</guid>
+				<description>&lt;!-- test:suite=create-buildpack;weight=4 --&gt;&#xA;&lt;p&gt;Now we&amp;rsquo;ll change the build step you created to install application dependencies. This will require updates to the &lt;code&gt;build&lt;/code&gt; script such that it performs the following steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a layer for the NodeJS runtime&lt;/li&gt;&#xA;&lt;li&gt;Download the NodeJS runtime and installs it to the layer&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;By doing this, you&amp;rsquo;ll learn how to create arbitrary layers with your buildpack, and how to read the contents of the app in order to perform actions like downloading dependencies.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Buildpack API 0.7 -&gt; 0.8</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.7-0.8/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.7-0.8/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Extending the build-time base image with a build.Dockerfile</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/04_build-dockerfile/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/04_build-dockerfile/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Gitlab Auto DevOps</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/gitlab/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/gitlab/</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;https://about.gitlab.com/&#34;&gt;Gitlab&lt;/a&gt; is a web-based DevOps platform. The &lt;a href=&#34;https://docs.gitlab.com/ee/topics/autodevops/&#34;&gt;Auto DevOps&lt;/a&gt; feature uses &lt;a href=&#34;https://buildpacks.io/docs/install-pack&#34;&gt;&lt;code&gt;pack&lt;/code&gt;&lt;/a&gt;&#xA;to build applications prior to deploying them.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Package a buildpack or extension</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/package-buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/package-buildpack/</guid>
+				<description>Learn how to package your buildpack or extension for distribution.</description>
+			</item>
+			<item>
+				<title>package.toml</title>
+				<link>https://buildpacks.io/docs/reference/config/package-config/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/config/package-config/</guid>
+				<description>&lt;p&gt;The package config file is used for packaging buildpacks for distribution as OCI images or tar files.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Platform API 0.10 -&gt; 0.11</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.10-0.11/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.10-0.11/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Platform API 0.6 -&gt; 0.7</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.6-0.7/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/deprecated/platform-api-0.6-0.7/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Specify process types</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-launch-processes/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-launch-processes/</guid>
+				<description>&lt;p&gt;One of the benefits of buildpacks is that they are multi-process - an image can have multiple entrypoints for each operational mode.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Specify the build time environment variables</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/build-env/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/build-env/</guid>
+				<description>&lt;p&gt;&lt;code&gt;Environment variables&lt;/code&gt; are used to configure buildpack behavior. They may be specified by:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The platform operator (this page)&lt;/li&gt;&#xA;&lt;li&gt;The end user (see &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/configure-build-time-environment/&#34;&gt;Customize buildpack behavior with build-time environment variables&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;Other buildpacks (see &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-env/&#34;&gt;Specify the environment&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Use an HTTP proxy</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/use-http-proxy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/use-http-proxy/</guid>
+				<description>Useful for university or corporate environments.</description>
+			</item>
+			<item>
+				<title>Use project.toml</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-project-toml/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-project-toml/</guid>
+				<description>Simplify your &lt;code&gt;pack&lt;/code&gt; configuration.</description>
+			</item>
+			<item>
+				<title>What caching strategies are available to buildpacks?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/</guid>
+				<description>Learn strategies for caching layers at build-time for future re-use.</description>
+			</item>
+			<item>
+				<title>What happens during rebase?</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/rebase/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/rebase/</guid>
+				<description>&lt;p&gt;&lt;code&gt;Rebase&lt;/code&gt; allows app developers or operators to rapidly update an app image when its &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/base-images/run/&#34;&gt;runtime base image&lt;/a&gt; has changed.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a platform?</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/platform/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/platform/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;platform&lt;/code&gt; orchestrates &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;builds&lt;/a&gt; by invoking the &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; binary together with &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt; and&#xA;app source code to produce a runnable OCI image.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Build on Podman</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-on-podman/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/build-on-podman/</guid>
+				<description>Use Podman as an alternative to Docker to create the containerized build environment.</description>
+			</item>
+			<item>
+				<title>Buildpack API 0.8 -&gt; 0.9</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.8-0.9/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.8-0.9/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Export</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/export/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/export/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;exporter&lt;/code&gt; creates the final &lt;code&gt;OCI image&lt;/code&gt; and updates the image config with new metadata to reflect the latest changes.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Making your application runnable</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/05_make-app-runnable/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/05_make-app-runnable/</guid>
+				<description>&lt;!-- test:suite=create-buildpack;weight=5 --&gt;&#xA;&lt;p&gt;To make your app runnable, a default start command must be set. You&amp;rsquo;ll need to add the following to the end of your &lt;code&gt;build&lt;/code&gt; script:&lt;/p&gt;&#xA;&lt;!-- file=node-js-buildpack/bin/build data-target=append --&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ...&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set default start command&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat &amp;gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CNB_LAYERS_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/launch.toml&amp;#34;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;lt;&amp;lt; EOL&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;[[processes]]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;type = &amp;#34;web&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;command = [&amp;#34;node&amp;#34;, &amp;#34;app.js&amp;#34;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;default = true&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;EOL&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ...&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We also update our &lt;code&gt;app.js&lt;/code&gt; to uncomment code to start the server:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Platform API 0.11 -&gt; 0.12</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.11-0.12/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/migrate/platform-api-0.11-0.12/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Project &#34;Piper&#34;</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/piper/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/piper/</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;https://www.project-piper.io/&#34;&gt;Project &amp;ldquo;Piper&amp;rdquo;&lt;/a&gt; is a set of ready-made continuous delivery pipelines for direct use in your project.&#xA;It now also implements the CNB Platform spec as a step and makes it available in your Jenkins pipeline.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.project-piper.io/&#34;&gt;Project &amp;ldquo;Piper&amp;rdquo;&lt;/a&gt; is maintained by &lt;a href=&#34;https://www.sap.com/&#34;&gt;SAP&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Provide a Software Bill-of-Materials</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-sbom/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-sbom/</guid>
+				<description>&lt;p&gt;Buildpacks can provide a &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_bill_of_materials&#34;&gt;Software &lt;code&gt;Bill-of-Materials&lt;/code&gt;&lt;/a&gt; (SBOM)&#xA;to describe the dependencies that they provide.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Publishing with Github Actions</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/publish-buildpack/with-github-actions/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/publish-buildpack/with-github-actions/</guid>
+				<description>Learn how to automatically publish your buildpack to the Buildpack Registry from a Github Action.</description>
+			</item>
+			<item>
+				<title>Switching the runtime base image with a run.Dockerfile</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/05_run-dockerfile-switch/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/05_run-dockerfile-switch/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Use an inline buildpack</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-inline-buildpacks/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-inline-buildpacks/</guid>
+				<description>Customize your build with a bit of shell script.</description>
+			</item>
+			<item>
+				<title>Buildpack API 0.9 -&gt; 0.10</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.9-0.10/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/migrate/buildpack-api-0.9-0.10/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Create</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/create/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/create/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;creator&lt;/code&gt; runs &lt;code&gt;analyze&lt;/code&gt;, &lt;code&gt;detect&lt;/code&gt;, &lt;code&gt;restore&lt;/code&gt;, &lt;code&gt;build&lt;/code&gt;, and &lt;code&gt;export&lt;/code&gt; in a single command.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Extending the runtime base image with a run.Dockerfile</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/06_run-dockerfile-extend/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-extension/06_run-dockerfile-extend/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Improving performance with caching</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/06_caching/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/06_caching/</guid>
+				<description>&lt;!-- test:suite=create-buildpack;weight=7 --&gt;&#xA;&lt;p&gt;We can improve performance by caching the runtime between builds, only re-downloading when necessary. To begin, let&amp;rsquo;s cache the runtime layer.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cache-the-runtime-layer&#34;&gt;Cache the runtime layer&lt;/h2&gt;&#xA;&lt;p&gt;To do this, replace the following lines in the &lt;code&gt;build&lt;/code&gt; script:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 3. MAKE node-js AVAILABLE DURING LAUNCH&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s1&#34;&gt;&amp;#39;[types]\nlaunch = true&amp;#39;&lt;/span&gt; &amp;gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CNB_LAYERS_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/node-js.toml&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;with the following:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 3. MAKE node-js AVAILABLE DURING LAUNCH and CACHE it&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s1&#34;&gt;&amp;#39;[types]\ncache = true\nlaunch = true&amp;#39;&lt;/span&gt; &amp;gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;CNB_LAYERS_DIR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/node-js.toml&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Your full &lt;code&gt;node-js-buildpack/bin/build&lt;/code&gt;&lt;!--+&#34;{{open}}&#34;+--&gt; script should now look like the following:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Tekton</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/tekton/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/tekton/</guid>
+				<description>&lt;p&gt;&lt;a href=&#34;https://tekton.dev/&#34;&gt;Tekton&lt;/a&gt; is an open-source CI/CD system running on k8s.&lt;/p&gt;&#xA;&lt;p&gt;The CNB project has created a reference &amp;ldquo;task&amp;rdquo; for performing buildpacks builds with or without extensions (aka Dockerfile to be applied) top&#xA;of the &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle&#34;&gt;lifecycle&lt;/a&gt; tool (i.e. they do not use &lt;code&gt;pack&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;https://github.com/tektoncd/catalog/tree/master/task/buildpacks-phases&#34;&gt;Buildpacks Phases Task&lt;/a&gt; calls the individual &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle&#34;&gt;lifecycle&lt;/a&gt; binaries (prepare, analyze, detect, restore, build or extender, export), to run each phase in a separate container.&lt;/p&gt;&#xA;&lt;p&gt;The uid and gid as defined part of the builder image will be used to build the image.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Use a cache image</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-cache-image/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-cache-image/</guid>
+				<description>Share layers between builds with a cache image.</description>
+			</item>
+			<item>
+				<title>What is build reproducibility?</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/reproducibility/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/reproducibility/</guid>
+				<description>&lt;p&gt;Given the same inputs, two builds should produce the same outputs.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Launch</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/launch/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/launch/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;launcher&lt;/code&gt; is the entrypoint for the final OCI image, responsible for launching application processes.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Making your buildpack configurable</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/07_make-buildpack-configurable/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/07_make-buildpack-configurable/</guid>
+				<description>&lt;!-- test:suite=create-buildpack;weight=8 --&gt;&#xA;&lt;p&gt;It&amp;rsquo;s likely that not all NodeJS apps will want to use the same version of NodeJS. Let&amp;rsquo;s make the NodeJS version configurable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;select-nodejs-version&#34;&gt;Select NodeJS version&lt;/h2&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll allow buildpack users to define the desired NodeJS version via a &lt;code&gt;.node-js-version&lt;/code&gt; file in their app. We&amp;rsquo;ll first update the &lt;code&gt;detect&lt;/code&gt; script to check for this file. We will then record the dependency we can &lt;code&gt;provide&lt;/code&gt; (NodeJS), as well as the specific dependency the application will &lt;code&gt;require&lt;/code&gt;, in the &lt;code&gt;Build Plan&lt;/code&gt;, a document the lifecycle uses to determine if the buildpack will provide everything the application needs.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Rebase</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/rebase/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/rebase/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;rebaser&lt;/code&gt; places application layers atop a new version of the &lt;code&gt;runtime&lt;/code&gt; base image.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What are experimental features?</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/experimental-features/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/experimental-features/</guid>
+				<description>&lt;p&gt;Certain features are considered &lt;code&gt;experimental&lt;/code&gt; and susceptible to change in future API versions.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Extend</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/extend/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/extend/</guid>
+				<description>&lt;p&gt;The &lt;code&gt;extender&lt;/code&gt; applies &lt;code&gt;Dockerfiles&lt;/code&gt; output by image extensions to the &lt;code&gt;build&lt;/code&gt; or &lt;code&gt;runtime&lt;/code&gt; base image.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Specify export target</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-export-target/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-export-target/</guid>
+				<description>&lt;p&gt;Tell &lt;code&gt;pack&lt;/code&gt; where you want your app image to be saved.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Add labels to the application image</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-labels/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-labels/</guid>
+				<description>&lt;p&gt;Labels are key-value pairs, stored as strings, that are attached to an image (i.e., arbitrary metadata). Labels are used to add helpful descriptions or attributes to an application image, which are meaningful to users.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Base image types</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/base-images/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/base-images/</guid>
+				<description>&lt;p&gt;As you already know, &lt;code&gt;Cloud Native Buildpacks (CNBs)&lt;/code&gt; transform your application source code into &lt;code&gt;OCI images&lt;/code&gt;  that can run on any cloud.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Clear the buildpack environment</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/clear-env/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/clear-env/</guid>
+				<description>&lt;p&gt;&amp;ldquo;Clearing&amp;rdquo; the buildpack environment with &lt;code&gt;clear-env&lt;/code&gt; is the process of preventing the lifecycle from automatically merging user-provided environment variables into the buildpack&amp;rsquo;s executing process&amp;rsquo;s environment variables.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Craft a buildpack order</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/craft-order/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/distribute-buildpacks/craft-order/</guid>
+				<description>&lt;p&gt;An &lt;code&gt;order&lt;/code&gt; is a list of one or more &lt;code&gt;groups&lt;/code&gt; to be tested against application source code, so that the appropriate &lt;code&gt;group&lt;/code&gt; for a build can be determined.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Create a stack (deprecated)</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/stack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/stack/</guid>
+				<description>&lt;p&gt;A stack is the grouping together of the build and run base images, represented by a unique ID.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Create slice layers</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-slice-layers/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-slice-layers/</guid>
+				<description>&lt;p&gt;After all buildpacks have executed, the contents of the application directory will be included in the final application image as a single layer, OR as &lt;code&gt;slice&lt;/code&gt; layers. A &lt;code&gt;slice&lt;/code&gt; layer contains a portion of the application directory as defined by a &lt;code&gt;filepath&lt;/code&gt; glob.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Re-use dependency layers</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/re-use-layers/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/re-use-layers/</guid>
+				<description>&lt;p&gt;The &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/&#34;&gt;lifecycle&lt;/a&gt; provides a mechanism for buildpacks to explicitly opt into reusing any necessary &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/&#34;&gt;dependency layers&lt;/a&gt; from a previous build. Buildpacks may modify cached build dependencies before reusing them.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Specify the default launch process</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-default-launch-process/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-default-launch-process/</guid>
+				<description>Buildpacks can define multiple processes for an app image. Specify which process should be the default.</description>
+			</item>
+			<item>
+				<title>Specify the environment</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-env/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-env/</guid>
+				<description>&lt;p&gt;Environment variables are a common way to configure buildpacks at build-time and the application at runtime.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Stack</title>
+				<link>https://buildpacks.io/docs/for-app-developers/concepts/base-images/stack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/concepts/base-images/stack/</guid>
+				<description>&lt;p&gt;A stack (deprecated) is the grouping together of the build and run base images, represented by a unique ID.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Understand build failures</title>
+				<link>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/understand-failures/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-app-developers/how-to/build-outputs/understand-failures/</guid>
+				<description>How to troubleshoot when things go wrong.</description>
+			</item>
+			<item>
+				<title>Use exec.d binaries to configure the application at runtime</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-exec.d/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-exec.d/</guid>
+				<description>&lt;p&gt;The &lt;a href=&#34;https://github.com/buildpacks/spec/blob/main/buildpack.md#execd&#34;&gt;buildpacks &lt;code&gt;exec.d&lt;/code&gt; interface&lt;/a&gt; allows buildpack authors to execute custom scripts or binaries when the application image is started.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a buildpack dependency layer?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/</guid>
+				<description>&lt;p&gt;&lt;code&gt;Dependency layers&lt;/code&gt; are semantically meaningful layers that are contributed by one or more buildpacks during the &lt;code&gt;build&lt;/code&gt; phase, one for each dependency.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a buildpack package?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/package/</guid>
+				<description>&lt;p&gt;A &lt;code&gt;buildpack package&lt;/code&gt; refers to the process of packaging buildpacks for distribution as OCI images or OCI-compatible &lt;code&gt;tar&lt;/code&gt; files.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a component buildpack?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/component-buildpack/</guid>
+				<description>&lt;p&gt;A &lt;strong&gt;component buildpack&lt;/strong&gt; is a buildpack containing &lt;code&gt;/bin/detect&lt;/code&gt; and &lt;code&gt;/bin/build&lt;/code&gt; executables and that implements the &lt;a href=&#34;https://github.com/buildpacks/spec/blob/main/buildpack.md#buildpack-interface&#34;&gt;Buildpack Interface&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a composite buildpack?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/composite-buildpack/</guid>
+				<description>&lt;p&gt;A composite buildpack, also sometimes called a &amp;ldquo;meta buildpack&amp;rdquo;,&#xA;is a buildpack that does not contain any &lt;code&gt;./bin/detect&lt;/code&gt; or &lt;code&gt;./bin/build&lt;/code&gt; binaries,&#xA;but instead references other buildpacks in its &lt;code&gt;buildpack.toml&lt;/code&gt; via the &lt;code&gt;[[order]]&lt;/code&gt; array.&lt;/p&gt;&#xA;&lt;p&gt;This is useful for composing more complex detection strategies.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is a composite buildpack?</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/composite-buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/composite-buildpack/</guid>
+				<description>&lt;p&gt;A composite buildpack, also sometimes called a &amp;ldquo;meta buildpack&amp;rdquo;,&#xA;is a buildpack that does not contain any &lt;code&gt;./bin/detect&lt;/code&gt; or &lt;code&gt;./bin/build&lt;/code&gt; binaries,&#xA;but instead references other buildpacks in its &lt;code&gt;buildpack.toml&lt;/code&gt; via the &lt;code&gt;[[order]]&lt;/code&gt; array.&lt;/p&gt;&#xA;&lt;p&gt;This is useful for composing more complex detection strategies.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is an image extension?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/extension/</guid>
+				<description>&lt;p&gt;An &lt;code&gt;image extension&lt;/code&gt; is software that generates Dockerfiles that can be used to extend base images for buildpacks builds.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is an image extension?</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/concepts/extension/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/concepts/extension/</guid>
+				<description>&lt;p&gt;An &lt;code&gt;image extension&lt;/code&gt; is software that generates Dockerfiles that can be used to extend base images for buildpacks builds.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What is the build plan?</title>
+				<link>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/</guid>
+				<description>&lt;p&gt;A &lt;strong&gt;build plan&lt;/strong&gt; is a &lt;code&gt;toml&lt;/code&gt; file that is the output of the &lt;a href=&#34;https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/#phase-2-detect&#34;&gt;detect&lt;/a&gt; phase, in which each component buildpack or image extension may express the dependencies it requires and the dependencies it provides.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Specify an image extension in a builder</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/extensions/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/create-builder/extensions/</guid>
+				<description>&lt;p&gt;If you are using extensions, here is how to include them in a builder.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Buildpack API</title>
+				<link>https://buildpacks.io/docs/reference/spec/buildpack-api/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/spec/buildpack-api/</guid>
+				<description>&lt;p&gt;The Buildpack API specifies the interface between a &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; program and one or more &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/buildpack/&#34;&gt;buildpacks&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Distribution API</title>
+				<link>https://buildpacks.io/docs/reference/spec/distribution-api/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/spec/distribution-api/</guid>
+				<description>&lt;p&gt;This specification defines the artifact format, delivery mechanism, and order resolution process for buildpacks.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>pack</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack build</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_build/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_build/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack builder</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack builder create</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_create/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_create/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack builder inspect</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_inspect/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_inspect/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack builder suggest</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_suggest/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_builder_suggest/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack buildpack</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack buildpack inspect</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_inspect/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_inspect/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack buildpack new</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_new/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_new/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack buildpack package</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_package/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_package/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack buildpack pull</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_pull/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_pull/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack buildpack register</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_register/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_register/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack buildpack yank</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_yank/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_buildpack_yank/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack completion</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_completion/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_completion/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config default-builder</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_default-builder/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_default-builder/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config experimental</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_experimental/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_experimental/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config lifecycle-image</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_lifecycle-image/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_lifecycle-image/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config pull-policy</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_pull-policy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_pull-policy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registries</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registries add</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_add/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_add/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registries default</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_default/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_default/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registries list</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_list/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_list/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registries remove</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_remove/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registries_remove/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registry-mirrors</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registry-mirrors add</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_add/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_add/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registry-mirrors list</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_list/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_list/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config registry-mirrors remove</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_remove/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_registry-mirrors_remove/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config run-image-mirrors</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config run-image-mirrors add</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_add/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_add/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config run-image-mirrors list</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_list/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_list/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config run-image-mirrors remove</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_remove/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_run-image-mirrors_remove/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config trusted-builders</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config trusted-builders add</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_add/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_add/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config trusted-builders list</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_list/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_list/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack config trusted-builders remove</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_remove/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_config_trusted-builders_remove/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack extension</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack extension inspect</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_inspect/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_inspect/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack extension new</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_new/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_new/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack extension package</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_package/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_package/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack extension pull</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_pull/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_pull/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack extension register</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_register/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_register/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack extension yank</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_yank/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_yank/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack inspect</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest add</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest annotate</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest create</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest inspect</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest push</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest remove</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack manifest rm</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack rebase</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack report</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_report/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_report/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack sbom</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack sbom download</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom_download/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_sbom_download/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack stack</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack stack suggest</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack_suggest/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_stack_suggest/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>pack version</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_version/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_version/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Platform API</title>
+				<link>https://buildpacks.io/docs/reference/spec/platform-api/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/reference/spec/platform-api/</guid>
+				<description>&lt;p&gt;The Platform specification defines the interface between the CNB &lt;a href=&#34;https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/&#34;&gt;lifecycle&lt;/a&gt; and a &lt;a href=&#34;https://buildpacks.io/docs/for-app-developers/concepts/platform/&#34;&gt;platform&lt;/a&gt; that runs it.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Trusted Builders</title>
+				<link>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/concepts/trusted_builders/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/concepts/trusted_builders/</guid>
+				<description>&lt;p&gt;From version &lt;a href=&#34;https://github.com/buildpacks/pack/releases/tag/v0.11.0&#34;&gt;0.11.0&lt;/a&gt; onward, &lt;code&gt;pack&lt;/code&gt; can be used to identify builders that should be considered trusted. &lt;code&gt;pack build&lt;/code&gt; will operate slightly differently under the hood based on whether it considers the specified builder to be trusted.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

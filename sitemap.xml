@@ -186,6 +186,8 @@
   </url><url>
     <loc>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/specify-launch-processes/</loc>
   </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/build-inputs/build-env/</loc>
+  </url><url>
     <loc>https://buildpacks.io/docs/for-app-developers/how-to/special-cases/use-http-proxy/</loc>
   </url><url>
     <loc>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/use-project-toml/</loc>
@@ -240,9 +242,15 @@
   </url><url>
     <loc>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/rebase/</loc>
   </url><url>
+    <loc>https://buildpacks.io/docs/for-app-developers/concepts/experimental-features/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/extend/</loc>
+  </url><url>
     <loc>https://buildpacks.io/docs/for-app-developers/how-to/build-inputs/specify-export-target/</loc>
   </url><url>
     <loc>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/add-labels/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/concepts/base-images/</loc>
   </url><url>
     <loc>https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/clear-env/</loc>
   </url><url>
@@ -391,6 +399,22 @@
     <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_extension_yank/</loc>
   </url><url>
     <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/</loc>
+  </url><url>
+    <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/</loc>
   </url><url>
     <loc>https://buildpacks.io/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/</loc>
   </url><url>

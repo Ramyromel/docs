@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="The lifecycle orchestrates buildpack execution, then assembles the resulting artifacts into an OCI image.
+<meta name="description" content="The lifecycle orchestrates buildpacks, then assembles the resulting artifacts into an OCI image. It does its work in a series of distinct &ldquo;phases&rdquo;.
 "/>
 <link rel="canonical" content="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/">
 <link rel="icon" type="image/png" href="/images/favicon.png">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Cloud Native Buildpacks">
-<meta property="og:description" content="The lifecycle orchestrates buildpack execution, then assembles the resulting artifacts into an OCI image.
+<meta property="og:description" content="The lifecycle orchestrates buildpacks, then assembles the resulting artifacts into an OCI image. It does its work in a series of distinct &ldquo;phases&rdquo;.
 ">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://buildpacks.io/images/buildpacks-social-card.jpg">
@@ -43,20 +43,20 @@
 <meta property="twitter:creator" content="@buildpacks_io">
 
   <script
-    src="https://cdn.jsdelivr.net/combine/npm/axios@0.21.0,npm/jquery@3.5.1,npm/bootstrap@4.5.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
+    src="https://cdn.jsdelivr.net/combine/npm/axios@1.7.9,npm/jquery@3.7.1,npm/bootstrap@5.3.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
+    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Source+Sans+Pro:400,400i,600" rel="stylesheet">
   
   <link rel="stylesheet" href="https://buildpacks.io/scss/site.css" integrity="" media="screen">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  <script src="/pagefind/pagefind-ui.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJLSR4FQXL"></script>
   <link rel="stylesheet"
@@ -73,31 +73,6 @@
     }
   </style>
 
-  <script>
-    $(function () {
-      $('h1[id], h2[id], h3[id], h4[id], h5[id]').not(':has(a)').each(function () {
-        this.innerHTML =
-          `<a href="#${this.id}" class="h-anchor">
-            ${this.innerHTML} <i class="fas fa-link icon" aria-label="Anchor"></i>
-          </a>`;
-      });
-
-      if ($('input#search').length > 0) {
-        docsearch({
-          apiKey: '5c00a51f166dab99e1cc6e0a9976e9f9',
-          indexName: 'buildpacks',
-          inputSelector: 'input#search',
-          debug: false
-        });
-      }
-    });
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-CJLSR4FQXL');
-  </script>
-
   <title>What is the lifecycle? · Cloud Native Buildpacks</title>
 </head>
 
@@ -106,7 +81,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <a href="https://buildpacks.io/" class="logo navbar-brand"><img src="/images/buildpacks-logo.svg"
         alt="Buildpacks Logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -115,33 +90,39 @@
       <ul class="navbar-nav">
         
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/features">
+              Features
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/features">
-            Features
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/community">
+              Community
+            </a>
+          </li>
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://medium.com/buildpacks">
+              Blog
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/community">
-            Community
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://registry.buildpacks.io/">
+              Registry
+            </a>
+          </li>
         
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://medium.com/buildpacks">
-            Blog
-          </a>
-        </li>
-        
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://registry.buildpacks.io/">
-            Registry
-          </a>
-        </li>
+    
         
         <li class="nav-item text-center d-lg-none">
           <a class="nav-link py-2 px-1" href="/docs">Docs</a>
@@ -151,9 +132,11 @@
         </li>
       </ul>
 
-      <a class="button-light mr-3 d-none d-lg-block" href="/docs"><i class="far fa-file-alt mr-2"></i>Docs</a>
-      <a class="github-button icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
-    </div>
+      <a class="button-light ms-3 d-none d-lg-block" href="/docs">
+        <i class="far fa-file-alt me-2"></i>Docs
+      </a>
+       <a class="github-button ms-3  icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
+    </div>    
   </nav>
 </header>
 
@@ -164,9 +147,16 @@
     <div class='row'>
       <div class='col-md-3 docs-sidebar'>
         <nav class='sidebar'>
-  <form class="pt-1 pb-3 pl-2 pr-3 border-bottom">
-    <input id="search" class="form-control" type="search" placeholder="Search..." aria-label="Search">
-  </form>
+  <div id="search"></div>
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      bundlePath: "/pagefind/"
+    });
+  });
+  </script>
   <ul>
     <li data-nav-id="/docs/" class="dd-item depth-0">
       <a href="/docs/">Getting Started</a>
@@ -184,7 +174,7 @@
   <a href="/docs/for-app-developers/tutorials/">Tutorials</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/tutorials/basic-app/" class="dd-item depth-2">
-  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first application with buildpacks</a>
+  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first app with buildpacks</a>
 </li>
   </ul>
 </li>
@@ -222,6 +212,9 @@
 </li>
 <li data-nav-id="/docs/for-app-developers/concepts/reproducibility/" class="dd-item depth-2 collapse">
   <a href="/docs/for-app-developers/concepts/reproducibility/">What is build reproducibility?</a>
+</li>
+<li data-nav-id="/docs/for-app-developers/concepts/experimental-features/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-app-developers/concepts/experimental-features/">What are experimental features?</a>
 </li>
   </ul>
 </li>
@@ -261,10 +254,10 @@
   <a href="/docs/for-app-developers/how-to/build-outputs/">Understand build outputs</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the application</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the app</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/inspect-app/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your application image</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your app image</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/download-sbom/" class="dd-item depth-3 collapse">
   <a href="/docs/for-app-developers/how-to/build-outputs/download-sbom/">Download a Software Bill-of-Materials (SBOM)</a>
@@ -345,7 +338,13 @@
 <li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/rebase/" class="dd-item depth-3">
   <a href="/docs/for-platform-operators/concepts/lifecycle/rebase/">Rebase</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/extend/" class="dd-item depth-3">
+  <a href="/docs/for-platform-operators/concepts/lifecycle/extend/">Extend</a>
+</li>
   </ul>
+</li>
+<li data-nav-id="/docs/for-platform-operators/concepts/base-images/" class="dd-item depth-2">
+  <a href="/docs/for-platform-operators/concepts/base-images/">Base image types</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/concepts/composite-buildpack/" class="dd-item depth-2">
   <a href="/docs/for-platform-operators/concepts/composite-buildpack/">What is a composite buildpack?</a>
@@ -507,6 +506,30 @@
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/">pack inspect</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/">pack manifest</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/">pack manifest add</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/">pack manifest annotate</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/">pack manifest create</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/">pack manifest inspect</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/">pack manifest push</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/">pack manifest remove</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/">pack manifest rm</a>
+</li>
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/">pack rebase</a>
 </li>
@@ -571,6 +594,9 @@
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/">Declare source metadata</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/build-env/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/how-to/build-inputs/build-env/">Specify the build time environment variables</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/stack/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/stack/">Create a stack (deprecated)</a>
@@ -872,13 +898,39 @@
           <h1 class="title">What is the lifecycle?</h1>
         </div>
 
-        <p>The <code>lifecycle</code> orchestrates buildpack execution, then assembles the resulting artifacts into an <a href="https://github.com/opencontainers/image-spec">OCI image</a>.</p>
+        <p>The <code>lifecycle</code> orchestrates buildpacks, then assembles the resulting artifacts into an <a href="https://github.com/opencontainers/image-spec">OCI image</a>.
+It does its work in a series of distinct &ldquo;phases&rdquo;.</p>
+<h2 id="build-phases">Build Phases</h2>
+<p>An <strong>image build</strong> requires 5 lifecycle phases, as shown below:</p>
+<p><img src="/images/lifecycle-phases.png" alt="lifecycle phases"></p>
+<blockquote>
+<p><strong>Note</strong>: when talking about lifecycle phases you&rsquo;ll sometimes see nouns like <code>analyzer</code> or <code>/cnb/lifecycle/analyzer</code>
+and you&rsquo;ll sometimes see verbs like <code>analyze</code> or <code>analyze phase</code>.<br><br>
+These are all more-or-less interchangeable: the nouns refer to the <code>lifecycle</code> binary and the verbs refer to the work that the <code>lifecycle</code> performs.</p>
+</blockquote>
+<p>The <code>lifecycle</code> must be run in a containerized environment (such as a <code>Docker</code> container or <code>CI/CD</code> system).</p>
+<p>The <a href="/docs/for-platform-operators/concepts/lifecycle/analyze"><code>analyzer</code></a>, <a href="/docs/for-platform-operators/concepts/lifecycle/restore"><code>restorer</code></a>, and <a href="/docs/for-platform-operators/concepts/lifecycle/export"><code>exporter</code></a> (shown in pink above)
+require access to an image repository - either an <strong>OCI registry</strong> or Docker-compliant <strong>daemon</strong> (such as <code>Docker</code> or <code>Podman</code>)
+in order to do their work.</p>
+<p>This means that either registry credentials or a <code>Docker</code> socket must be available in the container where the lifecycle phase is running.
+For security hardening, these phases run in separate containers to avoid exposing sensitive data to <strong>buildpacks</strong>.</p>
+<p>The <a href="/docs/for-platform-operators/concepts/lifecycle/detect"><code>detector</code></a> and <a href="/docs/for-platform-operators/concepts/lifecycle/build"><code>builder</code></a> (shown in purple above)
+invoke buildpacks to do the work of determining which buildpacks are needed and
+transforming application source code into runnable artifacts (the real work of buildpacks!).
+For security hardening, both the <code>lifecycle</code> and buildpacks run as non-root users when doing this work.</p>
+<p>When a builder is <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/concepts/trusted_builders">trusted</a>, all 5 lifecycle phases can be run in the same container,
+and in this case the <a href="/docs/for-platform-operators/concepts/lifecycle/create"><code>creator</code></a> binary is used to run all 5 lifecycle phases with a single command invocation.</p>
+<p>To coordinate between phases, the lifecycle outputs a series of configuration files which are part of the <a href="/docs/reference/spec/platform-api">Platform API specification</a>.
+For the most part, platform operators do not need to be concerned with these files unless they are designing their own platform.</p>
+<h2 id="diving-deeper">Diving Deeper</h2>
+<p>Read on to learn more about each lifecycle phase, including phases not shown above.
+These include phases relating to <a href="/docs/for-platform-operators/concepts/lifecycle/launch">starting</a> or <a href="/docs/for-platform-operators/concepts/lifecycle/rebase">rebasing</a> the application, or <a href="/docs/for-platform-operators/concepts/lifecycle/extend">extending</a> base images used during the build.</p>
 
         
       
         
           <h2><a href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/analyze/" class="">Analyze</a></h2>
-          <p class="m-1">The <code>analyzer</code> restores files that buildpacks may use to optimize the build and export phases.</p>
+          <p class="m-1">The <code>analyzer</code> restores files that buildpacks may use to optimize the <code>build</code> and <code>export</code> phases.</p>
 
           
             <div class="text-md-right">
@@ -886,7 +938,7 @@
             </div>
         
           <h2><a href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/detect/" class="">Detect</a></h2>
-          <p class="m-1">The <code>detector</code> finds an ordered group of buildpacks to use during the build phase.</p>
+          <p class="m-1">The <code>detector</code> finds an ordered group of buildpacks to use during the <code>build</code> phase.</p>
 
           
             <div class="text-md-right">
@@ -894,7 +946,7 @@
             </div>
         
           <h2><a href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/restore/" class="">Restore</a></h2>
-          <p class="m-1">The <code>restorer</code> copies layers from the cache into the build container.</p>
+          <p class="m-1">The <code>restorer</code> copies layers from the <code>cache</code> into the <code>build</code> container.</p>
 
           
             <div class="text-md-right">
@@ -910,7 +962,7 @@
             </div>
         
           <h2><a href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/export/" class="">Export</a></h2>
-          <p class="m-1">The <code>exporter</code> creates the final OCI image.</p>
+          <p class="m-1">The <code>exporter</code> creates the final <code>OCI image</code> and updates the image config with new metadata to reflect the latest changes.</p>
 
           
             <div class="text-md-right">
@@ -918,7 +970,7 @@
             </div>
         
           <h2><a href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/create/" class="">Create</a></h2>
-          <p class="m-1">The <code>creator</code> runs analyze, detect, restore, build, and export in a single command.</p>
+          <p class="m-1">The <code>creator</code> runs <code>analyze</code>, <code>detect</code>, <code>restore</code>, <code>build</code>, and <code>export</code> in a single command.</p>
 
           
             <div class="text-md-right">
@@ -934,11 +986,19 @@
             </div>
         
           <h2><a href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/rebase/" class="">Rebase</a></h2>
-          <p class="m-1">The <code>rebaser</code> places application layers atop a new version of the runtime base image.</p>
+          <p class="m-1">The <code>rebaser</code> places application layers atop a new version of the <code>runtime</code> base image.</p>
 
           
             <div class="text-md-right">
               <a class="small text-pink mr-md-3 text-decoration-none" href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/rebase/">Learn more →</a>
+            </div>
+        
+          <h2><a href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/extend/" class="">Extend</a></h2>
+          <p class="m-1">The <code>extender</code> applies <code>Dockerfiles</code> output by image extensions to the <code>build</code> or <code>runtime</code> base image.</p>
+
+          
+            <div class="text-md-right">
+              <a class="small text-pink mr-md-3 text-decoration-none" href="https://buildpacks.io/docs/for-platform-operators/concepts/lifecycle/extend/">Learn more →</a>
             </div>
 
         <hr>
@@ -972,7 +1032,7 @@
   <footer>
   <div class="container footer">
     <a href="https://www.cncf.io/" style="width: 50%;"><img src="/images/cncf-color.svg" class="footer-logo" alt="CNCF logo" ></a>
-    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> incubating project.</p>
+    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> graduated project.</p>
   </div>
   <div class="bg-blue">
     <div class="container sub-footer">

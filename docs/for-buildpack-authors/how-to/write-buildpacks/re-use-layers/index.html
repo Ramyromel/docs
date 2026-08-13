@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<meta name="description" content="The lifecycle provides a mechanism for buildpacks to explicitly opt into reusing any necessary dependency layers from a previous build. Buildpacks may modify cached build dependencies before reusing…"/>
 <link rel="canonical" content="https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/re-use-layers/">
 <link rel="icon" type="image/png" href="/images/favicon.png">
 
@@ -22,7 +22,7 @@
 <meta property="og:url" content="https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/re-use-layers/">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Cloud Native Buildpacks">
-
+<meta property="og:description" content="The lifecycle provides a mechanism for buildpacks to explicitly opt into reusing any necessary dependency layers from a previous build. Buildpacks may modify cached build dependencies before reusing…">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://buildpacks.io/images/buildpacks-social-card.jpg">
 <meta property="og:image:alt" content="Buildpacks project logo">
@@ -41,20 +41,20 @@
 <meta property="twitter:creator" content="@buildpacks_io">
 
   <script
-    src="https://cdn.jsdelivr.net/combine/npm/axios@0.21.0,npm/jquery@3.5.1,npm/bootstrap@4.5.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
+    src="https://cdn.jsdelivr.net/combine/npm/axios@1.7.9,npm/jquery@3.7.1,npm/bootstrap@5.3.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
+    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Source+Sans+Pro:400,400i,600" rel="stylesheet">
   
   <link rel="stylesheet" href="https://buildpacks.io/scss/site.css" integrity="" media="screen">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  <script src="/pagefind/pagefind-ui.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJLSR4FQXL"></script>
   <link rel="stylesheet"
@@ -71,31 +71,6 @@
     }
   </style>
 
-  <script>
-    $(function () {
-      $('h1[id], h2[id], h3[id], h4[id], h5[id]').not(':has(a)').each(function () {
-        this.innerHTML =
-          `<a href="#${this.id}" class="h-anchor">
-            ${this.innerHTML} <i class="fas fa-link icon" aria-label="Anchor"></i>
-          </a>`;
-      });
-
-      if ($('input#search').length > 0) {
-        docsearch({
-          apiKey: '5c00a51f166dab99e1cc6e0a9976e9f9',
-          indexName: 'buildpacks',
-          inputSelector: 'input#search',
-          debug: false
-        });
-      }
-    });
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-CJLSR4FQXL');
-  </script>
-
   <title>Re-use dependency layers · Cloud Native Buildpacks</title>
 </head>
 
@@ -104,7 +79,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <a href="https://buildpacks.io/" class="logo navbar-brand"><img src="/images/buildpacks-logo.svg"
         alt="Buildpacks Logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -113,33 +88,39 @@
       <ul class="navbar-nav">
         
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/features">
+              Features
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/features">
-            Features
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/community">
+              Community
+            </a>
+          </li>
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://medium.com/buildpacks">
+              Blog
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/community">
-            Community
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://registry.buildpacks.io/">
+              Registry
+            </a>
+          </li>
         
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://medium.com/buildpacks">
-            Blog
-          </a>
-        </li>
-        
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://registry.buildpacks.io/">
-            Registry
-          </a>
-        </li>
+    
         
         <li class="nav-item text-center d-lg-none">
           <a class="nav-link py-2 px-1" href="/docs">Docs</a>
@@ -149,9 +130,11 @@
         </li>
       </ul>
 
-      <a class="button-light mr-3 d-none d-lg-block" href="/docs"><i class="far fa-file-alt mr-2"></i>Docs</a>
-      <a class="github-button icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
-    </div>
+      <a class="button-light ms-3 d-none d-lg-block" href="/docs">
+        <i class="far fa-file-alt me-2"></i>Docs
+      </a>
+       <a class="github-button ms-3  icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
+    </div>    
   </nav>
 </header>
 
@@ -162,9 +145,16 @@
     <div class='row'>
       <div class='col-md-3 docs-sidebar'>
         <nav class='sidebar'>
-  <form class="pt-1 pb-3 pl-2 pr-3 border-bottom">
-    <input id="search" class="form-control" type="search" placeholder="Search..." aria-label="Search">
-  </form>
+  <div id="search"></div>
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      bundlePath: "/pagefind/"
+    });
+  });
+  </script>
   <ul>
     <li data-nav-id="/docs/" class="dd-item depth-0">
       <a href="/docs/">Getting Started</a>
@@ -182,7 +172,7 @@
   <a href="/docs/for-app-developers/tutorials/">Tutorials</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/tutorials/basic-app/" class="dd-item depth-2">
-  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first application with buildpacks</a>
+  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first app with buildpacks</a>
 </li>
   </ul>
 </li>
@@ -220,6 +210,9 @@
 </li>
 <li data-nav-id="/docs/for-app-developers/concepts/reproducibility/" class="dd-item depth-2 collapse">
   <a href="/docs/for-app-developers/concepts/reproducibility/">What is build reproducibility?</a>
+</li>
+<li data-nav-id="/docs/for-app-developers/concepts/experimental-features/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-app-developers/concepts/experimental-features/">What are experimental features?</a>
 </li>
   </ul>
 </li>
@@ -259,10 +252,10 @@
   <a href="/docs/for-app-developers/how-to/build-outputs/">Understand build outputs</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the application</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the app</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/inspect-app/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your application image</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your app image</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/download-sbom/" class="dd-item depth-3 collapse">
   <a href="/docs/for-app-developers/how-to/build-outputs/download-sbom/">Download a Software Bill-of-Materials (SBOM)</a>
@@ -343,7 +336,13 @@
 <li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/rebase/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/concepts/lifecycle/rebase/">Rebase</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/extend/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/concepts/lifecycle/extend/">Extend</a>
+</li>
   </ul>
+</li>
+<li data-nav-id="/docs/for-platform-operators/concepts/base-images/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-platform-operators/concepts/base-images/">Base image types</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/concepts/composite-buildpack/" class="dd-item depth-2 collapse">
   <a href="/docs/for-platform-operators/concepts/composite-buildpack/">What is a composite buildpack?</a>
@@ -505,6 +504,30 @@
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/">pack inspect</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/">pack manifest</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/">pack manifest add</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/">pack manifest annotate</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/">pack manifest create</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/">pack manifest inspect</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/">pack manifest push</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/">pack manifest remove</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/">pack manifest rm</a>
+</li>
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/">pack rebase</a>
 </li>
@@ -569,6 +592,9 @@
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/">Declare source metadata</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/build-env/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/how-to/build-inputs/build-env/">Specify the build time environment variables</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/stack/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/stack/">Create a stack (deprecated)</a>
@@ -870,8 +896,41 @@
           <h1 class="title">Re-use dependency layers</h1>
         </div>
 
-        <p>This page is a stub! The CNB project is applying to <a href="https://developers.google.com/season-of-docs/docs/timeline">Google Season of Docs</a> to receive support for improving our documentation. Please check back soon.</p>
-<p>If you are familiar with this content and would like to make a contribution, please feel free to open a PR :)</p>
+        <p>The <a href="https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/">lifecycle</a> provides a mechanism for buildpacks to explicitly opt into reusing any necessary <a href="https://buildpacks.io/docs/for-buildpack-authors/concepts/layer/">dependency layers</a> from a previous build. Buildpacks may modify cached build dependencies before reusing them.</p>
+<p>A buildpack usually reads metadata about layers it created during a previous build to ensure only changed layers are updated. For buildpack authors, this can aid in improving build performance by avoiding re-uploading unchanged layers and restoring any previously-cached dependencies.</p>
+<p>To decide whether layer reuse is appropriate, a buildpack should consider:</p>
+<ul>
+<li>Whether files in the <code>&lt;app&gt;</code> directory have changed since the layer was created.</li>
+<li>Whether the environment has changed since the layer was created.</li>
+<li>Whether the buildpack version has changed since the layer was created.</li>
+<li>Whether new application dependency versions have been made available since the layer was created.</li>
+</ul>
+<p>At the start of the <code>build</code> phase a buildpack MAY find:</p>
+<ul>
+<li>Partial <code>&lt;layers&gt;/&lt;layer&gt;.toml</code> files describing layers from the previous builds. The restored <code>Layer Content Metadata</code> SHALL NOT contain <code>launch</code>, <code>build</code>, or <code>cache</code> booleans even if those values were set on a previous build.</li>
+<li><code>&lt;layers&gt;/&lt;layer&gt;.sbom.&lt;ext&gt;</code> files that were written previously.</li>
+<li><code>&lt;layers&gt;/&lt;layer&gt;/</code> directories containing layer contents that have been restored from the cache.</li>
+</ul>
+<p>A buildpack:</p>
+<ul>
+<li>MAY set <code>launch = true</code> under <code>[types]</code> in the restored <code>&lt;layers&gt;/&lt;layer&gt;.toml</code> file in order to include the layer in the final OCI image.</li>
+<li>MAY modify <code>metadata</code> in  <code>&lt;layers&gt;/&lt;layer&gt;.toml</code></li>
+<li>MAY modify <code>metadata</code> in  <code>&lt;layers&gt;/&lt;layer&gt;.sbom.&lt;ext&gt;</code></li>
+<li><strong>If</strong> the layer contents have been restored to the <code>&lt;layers&gt;/&lt;layer&gt;/</code> directory
+<ul>
+<li>MAY set <code>build = true</code> under <code>[types]</code> in the restored <code>&lt;layers&gt;/&lt;layer&gt;.toml</code> to expose the layer to subsequent buildpacks.
+<ul>
+<li>MAY set <code>cache = true</code> under <code>[types]</code> in the restored <code>&lt;layers&gt;/&lt;layer&gt;.toml</code> to persist the layer to subsequent builds.</li>
+<li>MAY modify the contents of <code>&lt;layers&gt;/&lt;layer&gt;/</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>If the buildpack does not set <code>launch</code>, <code>build</code>, or <code>cache</code> under <code>[types]</code> in the restored <code>&lt;layers&gt;/&lt;layer&gt;.toml</code> the layer SHALL be ignored.</p>
+<blockquote>
+<p>For more information on buildpack layer caching, see the documentation on <a href="https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/create-layer/">create dependency layers</a> and <a href="https://buildpacks.io/docs/for-buildpack-authors/concepts/caching-strategies/">buildpack layer types</a>.</p>
+</blockquote>
 
         
 
@@ -906,7 +965,7 @@
   <footer>
   <div class="container footer">
     <a href="https://www.cncf.io/" style="width: 50%;"><img src="/images/cncf-color.svg" class="footer-logo" alt="CNCF logo" ></a>
-    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> incubating project.</p>
+    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> graduated project.</p>
   </div>
   <div class="bg-blue">
     <div class="container sub-footer">

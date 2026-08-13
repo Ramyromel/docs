@@ -8,7 +8,8 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<meta name="description" content="A build plan is a toml file that is the output of the detect phase, in which each component buildpack or image extension may express the dependencies it requires and the dependencies it provides.
+"/>
 <link rel="canonical" content="https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/">
 <link rel="icon" type="image/png" href="/images/favicon.png">
 
@@ -22,7 +23,8 @@
 <meta property="og:url" content="https://buildpacks.io/docs/for-buildpack-authors/concepts/build-plan/">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Cloud Native Buildpacks">
-
+<meta property="og:description" content="A build plan is a toml file that is the output of the detect phase, in which each component buildpack or image extension may express the dependencies it requires and the dependencies it provides.
+">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://buildpacks.io/images/buildpacks-social-card.jpg">
 <meta property="og:image:alt" content="Buildpacks project logo">
@@ -41,20 +43,20 @@
 <meta property="twitter:creator" content="@buildpacks_io">
 
   <script
-    src="https://cdn.jsdelivr.net/combine/npm/axios@0.21.0,npm/jquery@3.5.1,npm/bootstrap@4.5.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
+    src="https://cdn.jsdelivr.net/combine/npm/axios@1.7.9,npm/jquery@3.7.1,npm/bootstrap@5.3.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
+    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Source+Sans+Pro:400,400i,600" rel="stylesheet">
   
   <link rel="stylesheet" href="https://buildpacks.io/scss/site.css" integrity="" media="screen">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  <script src="/pagefind/pagefind-ui.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJLSR4FQXL"></script>
   <link rel="stylesheet"
@@ -71,31 +73,6 @@
     }
   </style>
 
-  <script>
-    $(function () {
-      $('h1[id], h2[id], h3[id], h4[id], h5[id]').not(':has(a)').each(function () {
-        this.innerHTML =
-          `<a href="#${this.id}" class="h-anchor">
-            ${this.innerHTML} <i class="fas fa-link icon" aria-label="Anchor"></i>
-          </a>`;
-      });
-
-      if ($('input#search').length > 0) {
-        docsearch({
-          apiKey: '5c00a51f166dab99e1cc6e0a9976e9f9',
-          indexName: 'buildpacks',
-          inputSelector: 'input#search',
-          debug: false
-        });
-      }
-    });
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-CJLSR4FQXL');
-  </script>
-
   <title>What is the build plan? · Cloud Native Buildpacks</title>
 </head>
 
@@ -104,7 +81,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <a href="https://buildpacks.io/" class="logo navbar-brand"><img src="/images/buildpacks-logo.svg"
         alt="Buildpacks Logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -113,33 +90,39 @@
       <ul class="navbar-nav">
         
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/features">
+              Features
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/features">
-            Features
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/community">
+              Community
+            </a>
+          </li>
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://medium.com/buildpacks">
+              Blog
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/community">
-            Community
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://registry.buildpacks.io/">
+              Registry
+            </a>
+          </li>
         
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://medium.com/buildpacks">
-            Blog
-          </a>
-        </li>
-        
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://registry.buildpacks.io/">
-            Registry
-          </a>
-        </li>
+    
         
         <li class="nav-item text-center d-lg-none">
           <a class="nav-link py-2 px-1" href="/docs">Docs</a>
@@ -149,9 +132,11 @@
         </li>
       </ul>
 
-      <a class="button-light mr-3 d-none d-lg-block" href="/docs"><i class="far fa-file-alt mr-2"></i>Docs</a>
-      <a class="github-button icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
-    </div>
+      <a class="button-light ms-3 d-none d-lg-block" href="/docs">
+        <i class="far fa-file-alt me-2"></i>Docs
+      </a>
+       <a class="github-button ms-3  icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
+    </div>    
   </nav>
 </header>
 
@@ -162,9 +147,16 @@
     <div class='row'>
       <div class='col-md-3 docs-sidebar'>
         <nav class='sidebar'>
-  <form class="pt-1 pb-3 pl-2 pr-3 border-bottom">
-    <input id="search" class="form-control" type="search" placeholder="Search..." aria-label="Search">
-  </form>
+  <div id="search"></div>
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      bundlePath: "/pagefind/"
+    });
+  });
+  </script>
   <ul>
     <li data-nav-id="/docs/" class="dd-item depth-0">
       <a href="/docs/">Getting Started</a>
@@ -182,7 +174,7 @@
   <a href="/docs/for-app-developers/tutorials/">Tutorials</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/tutorials/basic-app/" class="dd-item depth-2">
-  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first application with buildpacks</a>
+  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first app with buildpacks</a>
 </li>
   </ul>
 </li>
@@ -220,6 +212,9 @@
 </li>
 <li data-nav-id="/docs/for-app-developers/concepts/reproducibility/" class="dd-item depth-2 collapse">
   <a href="/docs/for-app-developers/concepts/reproducibility/">What is build reproducibility?</a>
+</li>
+<li data-nav-id="/docs/for-app-developers/concepts/experimental-features/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-app-developers/concepts/experimental-features/">What are experimental features?</a>
 </li>
   </ul>
 </li>
@@ -259,10 +254,10 @@
   <a href="/docs/for-app-developers/how-to/build-outputs/">Understand build outputs</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the application</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the app</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/inspect-app/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your application image</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your app image</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/download-sbom/" class="dd-item depth-3 collapse">
   <a href="/docs/for-app-developers/how-to/build-outputs/download-sbom/">Download a Software Bill-of-Materials (SBOM)</a>
@@ -343,7 +338,13 @@
 <li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/rebase/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/concepts/lifecycle/rebase/">Rebase</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/extend/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/concepts/lifecycle/extend/">Extend</a>
+</li>
   </ul>
+</li>
+<li data-nav-id="/docs/for-platform-operators/concepts/base-images/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-platform-operators/concepts/base-images/">Base image types</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/concepts/composite-buildpack/" class="dd-item depth-2 collapse">
   <a href="/docs/for-platform-operators/concepts/composite-buildpack/">What is a composite buildpack?</a>
@@ -505,6 +506,30 @@
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/">pack inspect</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/">pack manifest</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/">pack manifest add</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/">pack manifest annotate</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/">pack manifest create</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/">pack manifest inspect</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/">pack manifest push</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/">pack manifest remove</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/">pack manifest rm</a>
+</li>
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/">pack rebase</a>
 </li>
@@ -569,6 +594,9 @@
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/">Declare source metadata</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/build-env/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/how-to/build-inputs/build-env/">Specify the build time environment variables</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/stack/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/stack/">Create a stack (deprecated)</a>
@@ -870,8 +898,53 @@
           <h1 class="title">What is the build plan?</h1>
         </div>
 
-        <p>This page is a stub! The CNB project is applying to <a href="https://developers.google.com/season-of-docs/docs/timeline">Google Season of Docs</a> to receive support for improving our documentation. Please check back soon.</p>
-<p>If you are familiar with this content and would like to make a contribution, please feel free to open a PR :)</p>
+        <p>A <strong>build plan</strong> is a <code>toml</code> file that is the output of the <a href="https://buildpacks.io/docs/for-buildpack-authors/concepts/lifecycle-phases/#phase-2-detect">detect</a> phase, in which each component buildpack or image extension may express the dependencies it requires and the dependencies it provides.</p>
+<p>Before we dive into more details, let&rsquo;s explain the difference between three terms relevant to the concept of <code>build plan</code>.</p>
+<ul>
+<li>
+<p>First, the <a href="https://github.com/buildpacks/spec/blob/main/buildpack.md#build-plan-toml">build plan</a> piece that is contributed by the buildpack during the <code>detect</code> phase. This piece is seen as the <code>build plan</code> from buildpack&rsquo;s perspective and is written to a temporary directory by the buildpack.</p>
+</li>
+<li>
+<p>Second, the concatenation of all buildpacks contributions that passed <code>detect</code>, which is considered the true <a href="https://github.com/buildpacks/spec/blob/main/platform.md#plantoml-toml">build plan</a> from the platform&rsquo;s perspective. This file usually gets written to the <code>&lt;layers&gt;</code> directory—unless the platform provided another path for it.</p>
+</li>
+<li>
+<p>Finally, the build plan piece that is shown to the buildpack during the <code>build</code> phase that is referred to as the <a href="https://github.com/buildpacks/spec/blob/main/buildpack.md#buildpack-plan-toml">buildpack plan</a>. This file only contains dependencies that a buildpack is responsible for providing; however a buildpack may choose NOT to provide any of these dependencies, leaving that work for a future buildpack. The <code>buildpack plan</code> file is usually written to a temporary directory by the <code>lifecycle</code>.</p>
+</li>
+</ul>
+<h2 id="example-build-plan-toml">Example Build Plan (toml)</h2>
+<p>In order to make contributions to the <code>Build Plan</code>, a <code>/bin/detect</code> executable MUST write entries to <code>&lt;plan&gt;</code> in two sections: <code>requires</code> and <code>provides</code>. The generated <code>plan.toml</code> file is usually added under the <code>&lt;layers&gt;</code>directory.
+The <code>requires</code> and <code>provides</code> sections MAY be repeated together inside of an <code>or</code> array at the top-level.<br>
+Each <code>requires</code> and <code>provides</code> section MUST be a list of entries formatted as shown below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">provides</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;&lt;dependency name&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">requires</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;&lt;dependency name&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">requires</span><span class="p">.</span><span class="nx">metadata</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c"># buildpack-specific data</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">or</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">or</span><span class="p">.</span><span class="nx">provides</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;&lt;dependency name&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">or</span><span class="p">.</span><span class="nx">requires</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;&lt;dependency name&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">or</span><span class="p">.</span><span class="nx">requires</span><span class="p">.</span><span class="nx">metadata</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c"># buildpack-specific data</span>
+</span></span></code></pre></div><h2 id="key-points">Key Points</h2>
+<ul>
+<li>A valid <code>build plan</code> is a plan where all required dependencies are provided in the necessary order, meaning that during the <code>build</code> phase, each component buildpack will have its required dependencies provided by component buildpack or an image extension that runs before it.</li>
+<li>Each pairing of <code>requires</code> and <code>provides</code> sections (at the top level, or inside of an <code>or</code> array) is a potential build plan. For more details, see the <a href="https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-build-plan/#example-jvm-buildpack">JVM buildpack</a> example.</li>
+<li>A group will only pass detection if a valid build plan can be produced from the dependencies that all elements in the group require and provide.</li>
+<li>The <code>detect</code> phase could fail if a buildpack requires a dependency that it does not itself provide, or is not provided by another buildpack.</li>
+<li>The <code>detect</code> phase could also fail when the buildpacks order is incorrect, i.e, the buildpacks providing dependencies run <code>after</code> the buildpacks requiring them.</li>
+<li>The resulting <code>build plan</code> is passed as one of the inputs to the <code>build</code> phase.</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p>For further examples and guidance on using the build plan, see the <a href="https://buildpacks.io/docs/for-buildpack-authors/how-to/write-buildpacks/use-build-plan/">how-to page</a>.</p>
 
         
 
@@ -906,7 +979,7 @@
   <footer>
   <div class="container footer">
     <a href="https://www.cncf.io/" style="width: 50%;"><img src="/images/cncf-color.svg" class="footer-logo" alt="CNCF logo" ></a>
-    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> incubating project.</p>
+    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> graduated project.</p>
   </div>
   <div class="bg-blue">
     <div class="container sub-footer">

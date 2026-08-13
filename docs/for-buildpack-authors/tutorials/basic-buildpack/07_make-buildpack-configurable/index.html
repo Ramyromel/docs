@@ -8,8 +8,8 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="It&amp;rsquo;s likely that not all NodeJS apps will want to use the same version of NodeJS. Let&amp;rsquo;s make the NodeJS version configurable.
-Select NodeJS version We&amp;rsquo;ll allow buildpack users to…"/>
+<meta name="description" content=" It&rsquo;s likely that not all NodeJS apps will want to use the same version of NodeJS. Let&rsquo;s make the NodeJS version configurable.
+Select NodeJS version We&rsquo;ll allow buildpack users to…"/>
 <link rel="canonical" content="https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/07_make-buildpack-configurable/">
 <link rel="icon" type="image/png" href="/images/favicon.png">
 
@@ -23,8 +23,8 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…"/>
 <meta property="og:url" content="https://buildpacks.io/docs/for-buildpack-authors/tutorials/basic-buildpack/07_make-buildpack-configurable/">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Cloud Native Buildpacks">
-<meta property="og:description" content="It&amp;rsquo;s likely that not all NodeJS apps will want to use the same version of NodeJS. Let&amp;rsquo;s make the NodeJS version configurable.
-Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
+<meta property="og:description" content=" It&rsquo;s likely that not all NodeJS apps will want to use the same version of NodeJS. Let&rsquo;s make the NodeJS version configurable.
+Select NodeJS version We&rsquo;ll allow buildpack users to…">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://buildpacks.io/images/buildpacks-social-card.jpg">
 <meta property="og:image:alt" content="Buildpacks project logo">
@@ -43,20 +43,20 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 <meta property="twitter:creator" content="@buildpacks_io">
 
   <script
-    src="https://cdn.jsdelivr.net/combine/npm/axios@0.21.0,npm/jquery@3.5.1,npm/bootstrap@4.5.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
+    src="https://cdn.jsdelivr.net/combine/npm/axios@1.7.9,npm/jquery@3.7.1,npm/bootstrap@5.3.3,npm/fullcalendar@5.4.0,npm/jquery-replacetext@1.1.0/replacetext.min.js"></script>
 
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
+    href="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css,npm/fullcalendar@5.4.0/main.min.css"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Source+Sans+Pro:400,400i,600" rel="stylesheet">
   
   <link rel="stylesheet" href="https://buildpacks.io/scss/site.css" integrity="" media="screen">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  <script src="/pagefind/pagefind-ui.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJLSR4FQXL"></script>
   <link rel="stylesheet"
@@ -73,31 +73,6 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
     }
   </style>
 
-  <script>
-    $(function () {
-      $('h1[id], h2[id], h3[id], h4[id], h5[id]').not(':has(a)').each(function () {
-        this.innerHTML =
-          `<a href="#${this.id}" class="h-anchor">
-            ${this.innerHTML} <i class="fas fa-link icon" aria-label="Anchor"></i>
-          </a>`;
-      });
-
-      if ($('input#search').length > 0) {
-        docsearch({
-          apiKey: '5c00a51f166dab99e1cc6e0a9976e9f9',
-          indexName: 'buildpacks',
-          inputSelector: 'input#search',
-          debug: false
-        });
-      }
-    });
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-CJLSR4FQXL');
-  </script>
-
   <title>Making your buildpack configurable · Cloud Native Buildpacks</title>
 </head>
 
@@ -106,7 +81,7 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
   <nav class="navbar navbar-expand-lg navbar-light">
     <a href="https://buildpacks.io/" class="logo navbar-brand"><img src="/images/buildpacks-logo.svg"
         alt="Buildpacks Logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -115,33 +90,39 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
       <ul class="navbar-nav">
         
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/features">
+              Features
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/features">
-            Features
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1"  
+              href="/community">
+              Community
+            </a>
+          </li>
         
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://medium.com/buildpacks">
+              Blog
+            </a>
+          </li>
         
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1"  href="/community">
-            Community
-          </a>
-        </li>
+          
+          <li class="nav-item ms-lg-4 text-center text-lg-left ">
+            <a class="nav-link py-2 py-lg-0 px-1" target='_blank' 
+              href="https://registry.buildpacks.io/">
+              Registry
+            </a>
+          </li>
         
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://medium.com/buildpacks">
-            Blog
-          </a>
-        </li>
-        
-        
-        <li class="nav-item mr-lg-4 text-center text-lg-left ">
-          <a class="nav-link py-2 py-lg-0 px-1" target='_blank'  href="https://registry.buildpacks.io/">
-            Registry
-          </a>
-        </li>
+    
         
         <li class="nav-item text-center d-lg-none">
           <a class="nav-link py-2 px-1" href="/docs">Docs</a>
@@ -151,9 +132,11 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
         </li>
       </ul>
 
-      <a class="button-light mr-3 d-none d-lg-block" href="/docs"><i class="far fa-file-alt mr-2"></i>Docs</a>
-      <a class="github-button icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
-    </div>
+      <a class="button-light ms-3 d-none d-lg-block" href="/docs">
+        <i class="far fa-file-alt me-2"></i>Docs
+      </a>
+       <a class="github-button ms-3  icon-button bg-blue button d-none d-lg-flex" href="https://github.com/buildpacks">GitHub</a>
+    </div>    
   </nav>
 </header>
 
@@ -164,9 +147,16 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
     <div class='row'>
       <div class='col-md-3 docs-sidebar'>
         <nav class='sidebar'>
-  <form class="pt-1 pb-3 pl-2 pr-3 border-bottom">
-    <input id="search" class="form-control" type="search" placeholder="Search..." aria-label="Search">
-  </form>
+  <div id="search"></div>
+  <script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      bundlePath: "/pagefind/"
+    });
+  });
+  </script>
   <ul>
     <li data-nav-id="/docs/" class="dd-item depth-0">
       <a href="/docs/">Getting Started</a>
@@ -184,7 +174,7 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
   <a href="/docs/for-app-developers/tutorials/">Tutorials</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/tutorials/basic-app/" class="dd-item depth-2">
-  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first application with buildpacks</a>
+  <a href="/docs/for-app-developers/tutorials/basic-app/">Build your very first app with buildpacks</a>
 </li>
   </ul>
 </li>
@@ -222,6 +212,9 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 </li>
 <li data-nav-id="/docs/for-app-developers/concepts/reproducibility/" class="dd-item depth-2 collapse">
   <a href="/docs/for-app-developers/concepts/reproducibility/">What is build reproducibility?</a>
+</li>
+<li data-nav-id="/docs/for-app-developers/concepts/experimental-features/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-app-developers/concepts/experimental-features/">What are experimental features?</a>
 </li>
   </ul>
 </li>
@@ -261,10 +254,10 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
   <a href="/docs/for-app-developers/how-to/build-outputs/">Understand build outputs</a>
   <ul class="ml-2">
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the application</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/specify-launch-process/">Run the app</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/inspect-app/" class="dd-item depth-3 collapse">
-  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your application image</a>
+  <a href="/docs/for-app-developers/how-to/build-outputs/inspect-app/">Inspect your app image</a>
 </li>
 <li data-nav-id="/docs/for-app-developers/how-to/build-outputs/download-sbom/" class="dd-item depth-3 collapse">
   <a href="/docs/for-app-developers/how-to/build-outputs/download-sbom/">Download a Software Bill-of-Materials (SBOM)</a>
@@ -345,7 +338,13 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 <li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/rebase/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/concepts/lifecycle/rebase/">Rebase</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/concepts/lifecycle/extend/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/concepts/lifecycle/extend/">Extend</a>
+</li>
   </ul>
+</li>
+<li data-nav-id="/docs/for-platform-operators/concepts/base-images/" class="dd-item depth-2 collapse">
+  <a href="/docs/for-platform-operators/concepts/base-images/">Base image types</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/concepts/composite-buildpack/" class="dd-item depth-2 collapse">
   <a href="/docs/for-platform-operators/concepts/composite-buildpack/">What is a composite buildpack?</a>
@@ -507,6 +506,30 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_inspect/">pack inspect</a>
 </li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest/">pack manifest</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_add/">pack manifest add</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_annotate/">pack manifest annotate</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_create/">pack manifest create</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_inspect/">pack manifest inspect</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_push/">pack manifest push</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_remove/">pack manifest remove</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/" class="dd-item depth-5 collapse">
+  <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_manifest_rm/">pack manifest rm</a>
+</li>
 <li data-nav-id="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/" class="dd-item depth-5 collapse">
   <a href="/docs/for-platform-operators/how-to/integrate-ci/pack/cli/pack_rebase/">pack rebase</a>
 </li>
@@ -571,6 +594,9 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/declare-source-metadata/">Declare source metadata</a>
+</li>
+<li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/build-env/" class="dd-item depth-3 collapse">
+  <a href="/docs/for-platform-operators/how-to/build-inputs/build-env/">Specify the build time environment variables</a>
 </li>
 <li data-nav-id="/docs/for-platform-operators/how-to/build-inputs/stack/" class="dd-item depth-3 collapse">
   <a href="/docs/for-platform-operators/how-to/build-inputs/stack/">Create a stack (deprecated)</a>
@@ -879,28 +905,29 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 <p>Update <code>node-js-buildpack/bin/detect</code> to look like this:</p>
 <!-- test:file=node-js-buildpack/bin/detect -->
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/usr/bin/env bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">set</span> -eo pipefail
+</span></span></span><span class="line"><span class="cl"><span class="nb">set</span> -eo pipefail
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> ! -f package.json <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">   <span class="nb">exit</span> <span class="m">100</span>
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ======= ADDED =======</span>
-</span></span><span class="line"><span class="cl"><span class="nv">plan</span><span class="o">=</span><span class="si">${</span><span class="nv">CNB_BUILD_PLAN_PATH</span><span class="si">}</span>
 </span></span><span class="line"><span class="cl"><span class="nv">version</span><span class="o">=</span>3.1.3
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> -f .node-js-version <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">version</span><span class="o">=</span><span class="k">$(</span>cat .node-js-version <span class="p">|</span> tr -d <span class="s1">&#39;[:space:]&#39;</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">version</span><span class="o">=</span><span class="k">$(</span>&lt; .node-js-version tr -d <span class="s1">&#39;[:space:]&#39;</span><span class="k">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;provides = [{ name = \&#34;node-js\&#34; }]&#34;</span> &gt; <span class="s2">&#34;</span><span class="nv">$plan</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;requires = [{ name = \&#34;node-js\&#34;, metadata = { version = \&#34;</span><span class="nv">$version</span><span class="s2">\&#34; } }]&#34;</span> &gt;&gt; <span class="s2">&#34;</span><span class="nv">$plan</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">cat &gt; <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CNB_BUILD_PLAN_PATH</span><span class="si">}</span><span class="s2">&#34;</span> <span class="s">&lt;&lt; EOL
+</span></span></span><span class="line"><span class="cl"><span class="s">provides = [{ name = &#34;node-js&#34; }]
+</span></span></span><span class="line"><span class="cl"><span class="s">requires = [{ name = &#34;node-js&#34;, metadata = { version = &#34;$version&#34; } }]
+</span></span></span><span class="line"><span class="cl"><span class="s">EOL</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># ======= /ADDED =======</span>
 </span></span></code></pre></div><p>Then you will need to update your <code>build</code> script to look for the recorded NodeJS version in the build plan:</p>
 <p>Your <code>node-js-buildpack/bin/build</code> script should look like the following:</p>
 <!-- test:file=node-js-buildpack/bin/build -->
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/usr/bin/env bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">set</span> -eo pipefail
+</span></span></span><span class="line"><span class="cl"><span class="nb">set</span> -eo pipefail
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;---&gt; NodeJS Buildpack&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -917,8 +944,8 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 </span></span><span class="line"><span class="cl"><span class="nv">default_node_js_version</span><span class="o">=</span><span class="s2">&#34;18.18.1&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">node_js_version</span><span class="o">=</span><span class="k">$(</span>cat <span class="s2">&#34;</span><span class="nv">$plan</span><span class="s2">&#34;</span> <span class="p">|</span> yj -t <span class="p">|</span> jq -r <span class="s1">&#39;.entries[] | select(.name == &#34;node-js&#34;) | .metadata.version&#39;</span> <span class="o">||</span> <span class="nb">echo</span> <span class="si">${</span><span class="nv">default_node_js_version</span><span class="si">}</span><span class="k">)</span>
 </span></span><span class="line"><span class="cl"><span class="nv">node_js_url</span><span class="o">=</span>https://nodejs.org/dist/v<span class="si">${</span><span class="nv">node_js_version</span><span class="si">}</span>/node-v<span class="si">${</span><span class="nv">node_js_version</span><span class="si">}</span>-linux-x64.tar.xz
-</span></span><span class="line"><span class="cl"><span class="nv">remote_nodejs_version</span><span class="o">=</span><span class="k">$(</span>cat <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CNB_LAYERS_DIR</span><span class="si">}</span><span class="s2">/node-js.toml&#34;</span> 2&gt; /dev/null <span class="p">|</span> yj -t <span class="p">|</span> jq -r .metadata.nodejs_version 2&gt;/dev/null <span class="o">||</span> <span class="nb">echo</span> <span class="s1">&#39;NOT FOUND&#39;</span><span class="k">)</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">node_js_url</span><span class="si">}</span><span class="s2">&#34;</span> !<span class="o">=</span> *<span class="s2">&#34;</span><span class="si">${</span><span class="nv">remote_nodejs_version</span><span class="si">}</span><span class="s2">&#34;</span>* <span class="o">]]</span> <span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl"><span class="nv">remote_nodejs_version</span><span class="o">=</span><span class="k">$(</span>cat <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CNB_LAYERS_DIR</span><span class="si">}</span><span class="s2">/node-js.toml&#34;</span> 2&gt;/dev/null <span class="p">|</span> yj -t <span class="p">|</span> jq -r .metadata.nodejs_version 2&gt;/dev/null <span class="o">||</span> <span class="nb">echo</span> <span class="s1">&#39;NOT FOUND&#39;</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">node_js_url</span><span class="si">}</span><span class="s2">&#34;</span> !<span class="o">=</span> *<span class="s2">&#34;</span><span class="si">${</span><span class="nv">remote_nodejs_version</span><span class="si">}</span><span class="s2">&#34;</span>* <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;-----&gt; Downloading and extracting NodeJS&#34;</span> <span class="si">${</span><span class="nv">node_js_version</span><span class="si">}</span>
 </span></span><span class="line"><span class="cl">    wget -q -O - <span class="s2">&#34;</span><span class="si">${</span><span class="nv">node_js_url</span><span class="si">}</span><span class="s2">&#34;</span> <span class="p">|</span> tar -xJf - --strip-components <span class="m">1</span> -C <span class="s2">&#34;</span><span class="si">${</span><span class="nv">node_js_layer</span><span class="si">}</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span>
@@ -926,7 +953,7 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 4. MAKE node-js AVAILABLE DURING LAUNCH and CACHE the LAYER</span>
-</span></span><span class="line"><span class="cl">    cat &gt; <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CNB_LAYERS_DIR</span><span class="si">}</span><span class="s2">/node-js.toml&#34;</span> <span class="s">&lt;&lt; EOL
+</span></span><span class="line"><span class="cl">cat &gt; <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CNB_LAYERS_DIR</span><span class="si">}</span><span class="s2">/node-js.toml&#34;</span> <span class="s">&lt;&lt; EOL
 </span></span></span><span class="line"><span class="cl"><span class="s">[types]
 </span></span></span><span class="line"><span class="cl"><span class="s">cache = true
 </span></span></span><span class="line"><span class="cl"><span class="s">launch = true
@@ -936,7 +963,7 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ========== ADDED ===========</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 5. SET DEFAULT START COMMAND</span>
-</span></span><span class="line"><span class="cl">cat &gt;&gt; <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CNB_LAYERS_DIR</span><span class="si">}</span><span class="s2">/launch.toml&#34;</span> <span class="s">&lt;&lt; EOL
+</span></span><span class="line"><span class="cl">cat &gt; <span class="s2">&#34;</span><span class="si">${</span><span class="nv">CNB_LAYERS_DIR</span><span class="si">}</span><span class="s2">/launch.toml&#34;</span> <span class="s">&lt;&lt; EOL
 </span></span></span><span class="line"><span class="cl"><span class="s">[[processes]]
 </span></span></span><span class="line"><span class="cl"><span class="s">type = &#34;web&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s">command = [&#34;node&#34;, &#34;app.js&#34;]
@@ -953,8 +980,8 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
 <!-- test:assert=contains;ignore-lines=... -->
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">===&gt; BUILDING
 </span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl">---&gt; NodeJS Buildpack
-</span></span><span class="line"><span class="cl">-----&gt; Downloading and extracting NodeJS 18.18.1
+</span></span><span class="line"><span class="cl">[builder] ---&gt; NodeJS Buildpack
+</span></span><span class="line"><span class="cl">[builder] -----&gt; Downloading and extracting NodeJS 18.18.1
 </span></span></code></pre></div><h2 id="going-further">Going further</h2>
 <p>Now that you&rsquo;ve finished your buildpack, how about extending it? Try:</p>
 <ul>
@@ -995,7 +1022,7 @@ Select NodeJS version We&amp;rsquo;ll allow buildpack users to…">
   <footer>
   <div class="container footer">
     <a href="https://www.cncf.io/" style="width: 50%;"><img src="/images/cncf-color.svg" class="footer-logo" alt="CNCF logo" ></a>
-    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> incubating project.</p>
+    <p>We are a <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a> graduated project.</p>
   </div>
   <div class="bg-blue">
     <div class="container sub-footer">
